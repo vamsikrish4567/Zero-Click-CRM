@@ -1,0 +1,241 @@
+{
+  "id": "zoho",
+  "name": "Zoho",
+  "connected": false,
+  "dataSources": [
+    {
+      "id": "zoho-calls",
+      "name": "Voice Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": false,
+      "count": 3
+    },
+    {
+      "id": "zoho-emails",
+      "name": "Email Tracking",
+      "type": "email",
+      "icon": "mail",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "zoho-meetings",
+      "name": "Web Conferences",
+      "type": "transcript",
+      "icon": "video",
+      "connected": false,
+      "count": 1
+    },
+    {
+      "id": "zoho-social",
+      "name": "Social Media",
+      "type": "message",
+      "icon": "message",
+      "connected": false,
+      "count": 1
+    }
+  ],
+  "stats": {
+    "contacts": 5,
+    "deals": 3,
+    "companies": 5,
+    "lastSync": null
+  },
+  "contacts": [
+    {
+      "id": "zoho-1",
+      "name": "Chris Baker",
+      "email": "chris@salesteampro.com",
+      "phone": "(555) 501-6005",
+      "company": "Sales Team Pro",
+      "title": "Head of Sales",
+      "status": "Active",
+      "source": "Zoho",
+      "created_at": "2025-11-09T15:30:00Z",
+      "notes": "15-person sales team using spreadsheets. Interested in pipeline visualization. Pricing: $2,250/month ($1,800 with Q1 promo). Demo impressed team. Kickoff call Thursday afternoon."
+    },
+    {
+      "id": "zoho-2",
+      "name": "Patricia Williams",
+      "email": "patricia@enterprisesolutions.com",
+      "phone": "(555) 501-6006",
+      "company": "Enterprise Solutions",
+      "title": "VP Marketing",
+      "status": "Active",
+      "source": "Zoho",
+      "created_at": "2025-11-09T11:00:00Z",
+      "notes": "Professional plan at $85K annually. Mobile app issues resolved with recent update. Renewal discussion: 15% off for 2-year ($72,250/year) or 20% off for 3-year ($68K/year) + premium support."
+    },
+    {
+      "id": "zoho-3",
+      "name": "Daniel Kim",
+      "email": "daniel@techstartup.io",
+      "phone": "(555) 501-6007",
+      "company": "Tech Startup Inc",
+      "title": "Founder",
+      "status": "Trial",
+      "source": "Zoho",
+      "created_at": "2025-11-09T10:00:00Z",
+      "notes": "150 customers, growing 20% MoM. Chaotic process using Gmail, Sheets, Slack. Startup program: $375/month (50% off) for 5 users. 14-day trial active. Migration help offered (2hrs)."
+    },
+    {
+      "id": "zoho-4",
+      "name": "Jessica Martinez",
+      "email": "jessica@mediapro.agency",
+      "phone": "(555) 501-6001",
+      "company": "MediaPro Agency",
+      "title": "CEO",
+      "status": "Active",
+      "source": "Zoho",
+      "created_at": "2025-11-09T13:00:00Z",
+      "notes": "Q2 Campaign Strategy: $120K budget. Webinar series ($40K), case studies ($30K), partnership marketing ($50K). Goals: 500 webinar registrants/session, 5 case studies, 2,000 partnership leads."
+    },
+    {
+      "id": "zoho-5",
+      "name": "Michael Chen",
+      "email": "michael@datasecure.com",
+      "phone": "(555) 501-6003",
+      "company": "DataSecure Inc",
+      "title": "CTO",
+      "status": "At Risk",
+      "source": "Zoho",
+      "created_at": "2025-11-09T16:00:00Z",
+      "notes": "Post-incident technical requirements after outage. Nearly lost $300K contract. Implementing: validation scripts, real-time monitoring, multi-region failover, 99.99% uptime goal. Implementation plans due Friday."
+    }
+  ],
+  "deals": [
+    {
+      "id": "zoho-deal-1",
+      "title": "Sales Team Pro - CRM Implementation",
+      "value": 27000,
+      "stage": "demo_completed",
+      "contact": "Chris Baker",
+      "company": "Sales Team Pro",
+      "closeDate": "2025-11-16",
+      "notes": "15 users @ $1,800/month with Q1 promo (20% off). Annual: $21,600 first year, then $27,000. Kickoff call Thursday. Migration from spreadsheets."
+    },
+    {
+      "id": "zoho-deal-2",
+      "title": "Enterprise Solutions - 3-Year Renewal",
+      "value": 204000,
+      "stage": "negotiation",
+      "contact": "Patricia Williams",
+      "company": "Enterprise Solutions",
+      "closeDate": "2025-12-15",
+      "notes": "3-year deal @ $68K/year (20% discount) = $204K total. Includes premium support (dedicated rep, <1hr response, quarterly strategy). Mobile demo scheduled."
+    },
+    {
+      "id": "zoho-deal-3",
+      "title": "Tech Startup Inc - Startup Program",
+      "value": 4500,
+      "stage": "trial",
+      "contact": "Daniel Kim",
+      "company": "Tech Startup Inc",
+      "closeDate": "2025-11-23",
+      "notes": "5 users @ $375/month (50% startup discount) = $4,500 annually. 14-day trial active. Full price Year 2 ($9,000). Migration assistance included. API access needed."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "zoho-call-1",
+      "title": "Sales Follow-up - Sales Team Pro",
+      "date": "2025-11-09T15:30:00Z",
+      "duration": "18 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Rep",
+        "Chris Baker"
+      ],
+      "type": "call",
+      "dataSource": "zoho-calls",
+      "content": "Sales Rep: Hi Chris, following up on our demo last week. What did your team think?\n\nChris: We were impressed! The pipeline visualization was exactly what we need.\n\nSales Rep: That's great to hear. Are there any concerns I can address?\n\nChris: Just pricing. We're a 15-person sales team. What would our monthly cost be?\n\nSales Rep: For 15 users with full CRM access, that's $2,250 per month. But we're running a Q1 promotion - 20% off the first year.\n\nChris: So $1,800 monthly for the first year, then $2,250 after?\n\nSales Rep: Correct. And no setup fees or long-term contracts required.\n\nChris: What about training? Our team has varying tech skill levels.\n\nSales Rep: We provide unlimited training sessions during onboarding, plus video tutorials and 24/7 support.\n\nChris: That's reassuring. When could we start?\n\nSales Rep: Once you sign, we can have you up and running within 48 hours. I can even help with data migration from your current system.\n\nChris: We're using spreadsheets right now, so migration should be simple.\n\nSales Rep: Perfect! That's actually easier. I'll send over a proposal today. Does Thursday work for a kickoff call?\n\nChris: Thursday afternoon works. Send me the proposal and I'll review with my VP.\n\nSales Rep: Will do! You'll have it in the next hour. Looking forward to working together."
+    },
+    {
+      "id": "zoho-call-2",
+      "title": "Renewal Discussion - Enterprise Solutions",
+      "date": "2025-11-09T11:00:00Z",
+      "duration": "25 min",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager",
+        "Patricia Williams"
+      ],
+      "type": "call",
+      "dataSource": "zoho-calls",
+      "content": "Account Manager: Patricia, your annual contract is up for renewal next month. Let's discuss your experience this year.\n\nPatricia: Overall positive, but we've had some issues with the mobile app.\n\nAccount Manager: I saw those support tickets. Our product team actually just released a major mobile update last week.\n\nPatricia: Really? What's improved?\n\nAccount Manager: Offline functionality, faster sync, and a redesigned interface. Can I schedule a demo for your team?\n\nPatricia: Yes, please. That was our main pain point.\n\nAccount Manager: I'll set that up. Now, let's talk about your renewal. You're currently on our Professional plan at $85K annually.\n\nPatricia: We're hoping for a discount. We've been loyal customers.\n\nAccount Manager: I can offer you 15% off if you commit to a 2-year contract. That brings it down to $72,250 per year.\n\nPatricia: What about a 3-year deal?\n\nAccount Manager: For 3 years, I can do 20% off - $68K per year. Plus, I'll include our premium support package at no cost.\n\nPatricia: Premium support includes what exactly?\n\nAccount Manager: Dedicated account rep, priority response times under 1 hour, and quarterly strategy sessions.\n\nPatricia: That's valuable. Let me run this by finance, but I think we can make the 3-year deal work.\n\nAccount Manager: Excellent! I'll send over the proposal. And I'll personally handle that mobile demo for your team.\n\nPatricia: Perfect. Thanks for being proactive about this."
+    },
+    {
+      "id": "zoho-call-3",
+      "title": "Discovery Call - Tech Startup",
+      "date": "2025-11-09T10:00:00Z",
+      "duration": "30 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Manager",
+        "Daniel Kim"
+      ],
+      "type": "call",
+      "dataSource": "zoho-calls",
+      "content": "Sales Manager: Daniel, tell me about your current customer management process.\n\nDaniel: Honestly, it's chaotic. We're using Gmail, Google Sheets, and Slack. Nothing integrated.\n\nSales Manager: How many customers are you managing?\n\nDaniel: About 150 now, but we're growing 20% month over month. We need something scalable.\n\nSales Manager: What's your biggest pain point?\n\nDaniel: We lose track of conversations. A customer emails one person, calls another, and no one knows the full context.\n\nSales Manager: That's exactly what a CRM solves. Everything in one place - emails, calls, notes, deal status.\n\nDaniel: We're a startup though. Budget is tight.\n\nSales Manager: We have a startup program. First year at 50% off, specifically for companies under 2 years old with under $1M revenue.\n\nDaniel: We qualify! What would that cost?\n\nSales Manager: For 5 users, normally $750/month. With the startup discount, $375 for the first year.\n\nDaniel: That's manageable. What happens after year one?\n\nSales Manager: Full price, but by then you'll hopefully be growing revenue and the ROI will be clear.\n\nDaniel: Makes sense. What's included?\n\nSales Manager: Contact management, deal pipeline, email integration, mobile apps, reporting, and API access.\n\nDaniel: API access is important. We might want to build custom integrations.\n\nSales Manager: Full API documentation and support included. We have several startups doing custom integrations.\n\nDaniel: Can we try it first?\n\nSales Manager: Absolutely. 14-day free trial, no credit card required. I can set you up right now if you'd like.\n\nDaniel: Let's do it. Can you help us import our existing data?\n\nSales Manager: Yes! I'll personally help you migrate from your spreadsheets. Takes about 2 hours.\n\nDaniel: Perfect. This could solve a lot of headaches for us."
+    },
+    {
+      "id": "zoho-email-1",
+      "title": "Campaign Strategy - MediaPro Agency",
+      "date": "2025-11-09T14:30:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Marketing Team",
+        "Jessica Martinez"
+      ],
+      "type": "email",
+      "dataSource": "zoho-emails",
+      "content": "From: Jessica Martinez <jessica@mediapro.agency>\nTo: Marketing Team\nSubject: Q2 Campaign Strategy\n\nTeam,\n\nFor Q2, I want to focus on three key initiatives:\n\n1. **Webinar Series**: Monthly webinars targeting enterprise CMOs. Topics: digital transformation, marketing automation, customer retention.\n\n2. **Case Study Program**: Document 5 customer success stories with ROI data. Use these across all sales materials.\n\n3. **Partnership Marketing**: Leverage our new CRM partnership for co-marketing opportunities. Potential reach: 50K+ qualified leads.\n\nBudget: $120K for Q2\n\nPriorities:\n- Webinars: $40K (promotion, speakers, platform)\n- Case Studies: $30K (interviews, design, video production)\n- Partnership Marketing: $50K (joint campaigns, events)\n\nGoals:\n- 500 webinar registrants per session\n- 5 published case studies by end of Q2\n- 2,000 qualified leads from partnership activities\n\nLet's discuss this in tomorrow's meeting. Come prepared with ideas and timeline estimates.\n\nBest,\nJessica\n\n---\n\nFrom: Marketing Team\nTo: Jessica Martinez\n\nJessica,\n\nExcited about these initiatives! Quick questions:\n\n1. For webinars - do we have speaker commitments? Should we use external industry experts or internal thought leaders?\n\n2. Case studies - which customers should we target? Need to ensure they're willing to participate and have strong ROI stories.\n\n3. Partnership marketing - is the CRM partnership finalized? Need to understand timing.\n\nWe'll have detailed plans ready for tomorrow's meeting.\n\nThanks,\nMarketing Team"
+    },
+    {
+      "id": "zoho-email-2",
+      "title": "Technical Requirements - DataSecure",
+      "date": "2025-11-09T16:00:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "CTO Michael Chen",
+        "Engineering Team"
+      ],
+      "type": "email",
+      "dataSource": "zoho-emails",
+      "content": "From: Michael Chen <michael@datasecure.com>\nTo: Engineering Team\nSubject: Post-Incident Technical Requirements\n\nTeam,\n\nAfter today's outage, we're implementing mandatory technical requirements:\n\n**Immediate Actions (This Week):**\n1. Validation scripts before ANY maintenance\n2. Real-time replication monitoring\n3. Automated backup verification\n\n**Short-term (Next 30 Days):**\n1. Implement circuit breakers for database operations\n2. Multi-region failover capability\n3. Enhanced monitoring dashboards\n\n**Long-term (Next Quarter):**\n1. Chaos engineering tests\n2. Disaster recovery drills\n3. SLA guarantees with financial penalties\n\nOur goal: 99.99% uptime guarantee\n\nThis incident cost us customer trust and nearly a $300K contract. We cannot let it happen again.\n\nLead engineers - I need implementation plans by Friday.\n\nMichael\n\n---\n\nFrom: Engineering Team\nTo: Michael Chen\n\nMichael,\n\nUnderstood. We're already working on items 1-3 for immediate actions.\n\nQuestions:\n- What's the budget for multi-region infrastructure?\n- Do we need to hire additional DevOps engineers?\n- Should we consider third-party monitoring services?\n\nWe'll have detailed plans ready by Thursday EOD.\n\nEngineering Team"
+    },
+    {
+      "id": "zoho-meeting-1",
+      "title": "Quarterly Business Review - Consulting Partners",
+      "date": "2025-11-09T14:30:00Z",
+      "duration": "45 min",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager",
+        "Michelle Roberts",
+        "VP Sales"
+      ],
+      "type": "meeting",
+      "dataSource": "zoho-meetings",
+      "content": "Account Manager: Michelle, let's review your Q1 performance and discuss Q2 goals.\n\nMichelle: Sounds good. Overall, we're happy with the platform, but we'd like to discuss expansion.\n\nAccount Manager: Excellent! Let's start with Q1 metrics. You're currently using 10 licenses.\n\nMichelle: Yes, and we're adding 5 consultants next month. We'll need additional licenses.\n\nVP Sales: We can definitely accommodate that. The pricing stays the same - $150 per user per month.\n\nMichelle: Can we get a volume discount? We'll be at 15 users.\n\nAccount Manager: For 15+ users, I can offer 10% off. That brings it to $135 per user.\n\nMichelle: Better. Now, let's talk about features. We need better project management integration.\n\nVP Sales: We just launched integrations with Asana and Monday.com. Would either of those work?\n\nMichelle: We use Monday.com! That's perfect. Is it included in our plan?\n\nAccount Manager: Yes, all integrations are included. I can help you set it up today if you'd like.\n\nMichelle: Please do. That'll save our team hours every week.\n\nVP Sales: Looking at your usage data, you're really leveraging our reporting features. How's that going?\n\nMichelle: Reports are great, but we'd love custom branding. Can we white-label reports for our clients?\n\nAccount Manager: That's an Enterprise feature. You're on Professional now. Upgrading would add custom branding, advanced automation, and priority support.\n\nMichelle: What's the price difference?\n\nVP Sales: Professional is $150 per user. Enterprise is $225. With your volume discount, that's $202.50 per user.\n\nMichelle: So we'd go from $2,025/month to about $3,037/month for 15 users?\n\nAccount Manager: Correct. But you'd get white-labeled reports, custom workflows, and dedicated support.\n\nMichelle: Let me discuss with our managing partners. The white-labeling alone might be worth it for client presentations.\n\nVP Sales: I'll send over a detailed Enterprise feature comparison. Take your time deciding.\n\nMichelle: Perfect. Let's schedule a follow-up in two weeks.\n\nAccount Manager: Will do. I'll also send over the Monday.com integration setup guide today."
+    },
+    {
+      "id": "zoho-social-1",
+      "title": "LinkedIn Engagement - Multiple Prospects",
+      "date": "2025-11-09T10:00:00Z",
+      "duration": "Social Thread",
+      "participants": [
+        "Samuel Brown",
+        "Social Media Team",
+        "Various Prospects"
+      ],
+      "type": "social",
+      "dataSource": "zoho-social",
+      "content": "LinkedIn Post from Zoho:\n\"🚀 Exciting news! We've just launched our new mobile app with offline functionality. Sales teams can now update deals, add notes, and log calls even without internet connection. Everything syncs automatically when back online.\n\nPerfect for field sales teams! Learn more: [link]\"\n\n---\n\n💬 Comments:\n\n**Chris Baker (Sales Team Pro)**: This is exactly what we've been waiting for! Our reps are constantly in areas with poor signal. Offline mode is a game-changer.\n\n**Patricia Williams (Enterprise Solutions)**: As a current customer, I'm thrilled about this update. When will it roll out to all accounts?\n\nZoho Response: Hi Patricia! Rolling out to all accounts this week. You should see the update in your app store now!\n\n**Daniel Kim (Tech Startup)**: This looks great! We're considering Zoho for our growing team. Does the offline mode work on both iOS and Android?\n\nZoho Response: Yes, Daniel! Full offline functionality on both platforms. Would love to show you a demo. I'll DM you.\n\n**Jennifer Brown (Sales Manager)**: How does offline sync work if multiple team members update the same deal while offline?\n\nZoho Response: Great question! Our conflict resolution handles this automatically. The most recent change wins, and we notify both users so they can review.\n\n**Marcus Johnson (Monday.com)**: Impressive! We're currently using Salesforce but the mobile experience is frustrating. Might be time to switch.\n\nZoho Response: Marcus, I'd love to show you how easy migration can be. Sending you a DM with our Salesforce migration guide.\n\n---\n\nEngagement Metrics:\n- 1,247 likes\n- 89 comments\n- 234 shares\n- 45 demo requests generated"
+    }
+  ],
+  "recentActivity": []
+}

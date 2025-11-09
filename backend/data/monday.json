@@ -1,0 +1,284 @@
+{
+  "id": "monday",
+  "name": "Monday.com",
+  "connected": false,
+  "dataSources": [
+    {
+      "id": "monday-calls",
+      "name": "Team Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "monday-emails",
+      "name": "Email Integration",
+      "type": "email",
+      "icon": "mail",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "monday-meetings",
+      "name": "Meeting Notes",
+      "type": "transcript",
+      "icon": "video",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "monday-forms",
+      "name": "Form Submissions",
+      "type": "document",
+      "icon": "file",
+      "connected": false,
+      "count": 1
+    }
+  ],
+  "stats": {
+    "contacts": 6,
+    "deals": 6,
+    "companies": 6,
+    "transcripts": 28,
+    "lastSync": null
+  },
+  "contacts": [
+    {
+      "id": "monday-1",
+      "name": "Kevin Anderson",
+      "email": "kevin@projectmanager.com",
+      "phone": "(555) 601-7001",
+      "company": "Project Manager Pro",
+      "title": "Director of Operations",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T09:00:00Z",
+      "notes": "20 users, using Trello/Slack/Sheets mix. Needs resource allocation tracking. Demo scheduled. Professional plan $12/user/month ($240/month). 14-day trial starting with onboarding Thursday."
+    },
+    {
+      "id": "monday-2",
+      "name": "Sophia Lee",
+      "email": "sophia@workflowsolutions.com",
+      "phone": "(555) 601-7002",
+      "company": "Workflow Solutions",
+      "title": "COO",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T14:00:00Z",
+      "notes": "Technical integration with custom CRM. API/webhooks for deal-to-project automation. Professional plan. Sandbox provided for testing. SOC 2, GDPR compliant."
+    },
+    {
+      "id": "monday-3",
+      "name": "Brandon Thompson",
+      "email": "brandon@teamcollab.io",
+      "phone": "(555) 601-7003",
+      "company": "Team Collab",
+      "title": "Product Manager",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T11:30:00Z",
+      "notes": "Product development workflow. Needs advanced Gantt (auto-rescheduling, critical path). Beta access granted for new features launching April 2024. Q3 resource leveling expected."
+    },
+    {
+      "id": "monday-4",
+      "name": "Angela Davis",
+      "email": "angela@agilemaster.com",
+      "phone": "(555) 601-7004",
+      "company": "Agile Master Inc",
+      "title": "Scrum Master",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T10:00:00Z",
+      "notes": "2-week sprints, daily standups. Scrum template with Product/Engineering backlogs. Story points, velocity tracking (42 points/sprint avg). Async standups saving 2.5hrs/sprint. Setup by Wednesday, training Thursday."
+    },
+    {
+      "id": "monday-5",
+      "name": "Marcus Johnson",
+      "email": "marcus@digitalagency.com",
+      "phone": "(555) 601-7005",
+      "company": "Digital Agency Co",
+      "title": "Creative Director",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T15:00:00Z",
+      "notes": "Agency Partner Program invite. 30% recurring commission, white-label option, partner directory. 15 active clients. Potential $2,250-$3,750 monthly commission + 25% partner discount."
+    },
+    {
+      "id": "monday-6",
+      "name": "Rebecca White",
+      "email": "rebecca@startupventures.com",
+      "phone": "(555) 601-7006",
+      "company": "Startup Ventures",
+      "title": "VP Product",
+      "status": "Active",
+      "source": "Monday.com",
+      "created_at": "2025-11-06T09:30:00Z",
+      "notes": "6-person team, fast growing. Using Notion/Asana/Intercom/Sheets chaos. Three boards: Ideas, Roadmap, Active Development. Intercom/Slack integrations. Asana import scheduled. Starting next week."
+    }
+  ],
+  "deals": [
+    {
+      "id": "monday-deal-1",
+      "title": "Project Manager Pro - Professional Plan",
+      "value": 2880,
+      "stage": "trial",
+      "contact": "Kevin Anderson",
+      "company": "Project Manager Pro",
+      "closeDate": "2025-11-20",
+      "notes": "20 users @ $12/user/month = $2,880 annually. 14-day trial active. Resource allocation, budget tracking, client collaboration. QuickBooks integration. Onboarding Thursday."
+    },
+    {
+      "id": "monday-deal-2",
+      "title": "Workflow Solutions - Professional Plan",
+      "value": 12000,
+      "stage": "technical_evaluation",
+      "contact": "Sophia Lee",
+      "company": "Workflow Solutions",
+      "closeDate": "2025-12-15",
+      "notes": "API integration with custom CRM. Webhooks, bi-directional sync. 1,000 req/min rate limit. SOC 2 certified. Sandbox access provided. Professional plan with potential IP whitelisting add-on."
+    },
+    {
+      "id": "monday-deal-3",
+      "title": "Team Collab - Beta Program",
+      "value": 8000,
+      "stage": "beta_testing",
+      "contact": "Brandon Thompson",
+      "company": "Team Collab",
+      "closeDate": "2025-12-01",
+      "notes": "Advanced Gantt features beta access. Auto-rescheduling, critical path, drag-to-adjust dependencies. Resource leveling coming Q3 2024. Product development workflow."
+    },
+    {
+      "id": "monday-deal-4",
+      "title": "Agile Master Inc - Scrum Setup",
+      "value": 5400,
+      "stage": "implementation",
+      "contact": "Angela Davis",
+      "company": "Agile Master Inc",
+      "closeDate": "2025-11-13",
+      "notes": "Scrum template for 2-week sprints. Product/Engineering backlogs, story points, velocity tracking, burndown charts. Async standups. Setup Wed, training Thu, first sprint starts Monday."
+    },
+    {
+      "id": "monday-deal-5",
+      "title": "Digital Agency Co - Partner Program",
+      "value": 15000,
+      "stage": "partnership_discussion",
+      "contact": "Marcus Johnson",
+      "company": "Digital Agency Co",
+      "closeDate": "2025-12-01",
+      "notes": "Agency Partner Program. 30% commission, white-label, partner directory. 15 potential client referrals. Estimated $2,250-$3,750 monthly recurring commission. 25% partner discount."
+    },
+    {
+      "id": "monday-deal-6",
+      "title": "Startup Ventures - Product Team Setup",
+      "value": 3600,
+      "stage": "onboarding",
+      "contact": "Rebecca White",
+      "company": "Startup Ventures",
+      "closeDate": "2025-11-15",
+      "notes": "6-person product team. Ideas/Roadmap/Active Development boards. Intercom + Slack integrations. Asana import scheduled. Starting next week."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "monday-call-1",
+      "title": "Product Demo - Project Manager Pro",
+      "date": "2025-11-06T09:00:00Z",
+      "duration": "35 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Rep",
+        "Kevin Anderson"
+      ],
+      "type": "call",
+      "dataSource": "monday-calls",
+      "content": "Sales Rep: Kevin, thanks for joining the demo call. Tell me about your current project management setup.\n\nKevin: We're using a mix of tools - Trello for kanban boards, Slack for communication, and Google Sheets for resource planning. It's becoming unmanageable.\n\nSales Rep: That's exactly the problem Monday.com solves. Everything in one centralized workspace.\n\nKevin: Show me how you handle resource allocation across multiple projects.\n\nSales Rep: Let me share my screen. Here's a sample workspace with 5 active projects. See this timeline view? It shows all team members and their assignments across projects.\n\nKevin: Oh, that's visual! Can you filter by individual team members?\n\nSales Rep: Absolutely. Watch this - I'll filter for Sarah. Now you see only her assignments, color-coded by project. She's at 95% capacity this week.\n\nKevin: That's exactly what we need! We constantly overbook our designers.\n\nSales Rep: Monday.com will alert you when someone exceeds 100% capacity. You can also see upcoming bottlenecks up to 3 months out.\n\nKevin: What about budget tracking? We need to track hours and costs per project.\n\nSales Rep: Built in. Each task can have time estimates and actual hours logged. The budget column automatically calculates costs based on team member rates.\n\nKevin: Can we integrate with our accounting software?\n\nSales Rep: Yes, we have native integrations with QuickBooks, Xero, and FreshBooks. Time data flows directly into invoices.\n\nKevin: This could save our finance team hours every week. What about client collaboration?\n\nSales Rep: You can invite clients as guests - free of charge. They see only their projects and can comment, approve deliverables, and track progress.\n\nKevin: No additional costs for client access?\n\nSales Rep: Correct. Unlimited guest users. You only pay for your internal team.\n\nKevin: That's a game changer. What's the pricing for 20 users?\n\nSales Rep: Our Professional plan is perfect for you - $12 per user per month, billed annually. That's $240 monthly for your team.\n\nKevin: What if we add more users mid-year?\n\nSales Rep: Simple proration. You're only charged for the remaining months. And you can scale up or down anytime.\n\nKevin: What's included in support?\n\nSales Rep: 24/7 email and chat support, video tutorials, weekly webinars, and dedicated onboarding specialist.\n\nKevin: This looks really promising. Can we try it with our actual projects?\n\nSales Rep: Yes! I'll set up a 14-day trial with your branding. I'll personally help you migrate 2-3 projects so you can see real value.\n\nKevin: Perfect. Let's schedule the onboarding for Thursday.\n\nSales Rep: Great! I'll send you a calendar invite and setup instructions today."
+    },
+    {
+      "id": "monday-call-2",
+      "title": "Technical Discussion - Workflow Solutions",
+      "date": "2025-11-06T14:00:00Z",
+      "duration": "28 min",
+      "participants": [
+        "Samuel Brown",
+        "Solutions Engineer",
+        "Sophia Lee"
+      ],
+      "type": "call",
+      "dataSource": "monday-calls",
+      "content": "Solutions Engineer: Sophia, I understand you have some technical questions about our API and automation capabilities.\n\nSophia: Yes, we need to integrate Monday.com with our custom CRM and trigger workflows automatically.\n\nSolutions Engineer: Perfect. Our API is fully documented and supports REST and GraphQL. What specific integrations are you thinking?\n\nSophia: When a deal closes in our CRM, we want to automatically create a project in Monday.com with predefined tasks.\n\nSolutions Engineer: That's a common use case. You can use webhooks from your CRM to trigger Monday.com API calls. We have pre-built templates for project creation.\n\nSophia: Can we customize the template based on deal type? Enterprise deals need more tasks than SMB deals.\n\nSolutions Engineer: Absolutely. You can pass parameters with the API call to conditionally create different task sets. I can show you sample code.\n\nSophia: That would be helpful. What about bi-directional sync?\n\nSolutions Engineer: Supported. You can set up webhooks in Monday.com to push updates back to your CRM. For example, when a project completes, update the deal status.\n\nSophia: What's the rate limit on API calls?\n\nSolutions Engineer: 1,000 requests per minute for paid plans. For your use case, that's more than sufficient.\n\nSophia: We might have bursts during end-of-month when we close multiple deals.\n\nSolutions Engineer: Even if you close 100 deals simultaneously, that's well under the limit. And we have rate limit monitoring in the API dashboard.\n\nSophia: Good. What about data security? We handle sensitive client information.\n\nSolutions Engineer: We're SOC 2 Type II certified, GDPR compliant, and offer SSO with SAML. All data encrypted at rest and in transit.\n\nSophia: Can we restrict API access to specific IP addresses?\n\nSolutions Engineer: Yes, IP whitelisting is available on Enterprise plans. You can also use OAuth2 with token expiration.\n\nSophia: We're looking at the Professional plan, not Enterprise.\n\nSolutions Engineer: For your integration needs, Professional should work. But let me check with our team about IP whitelisting as an add-on.\n\nSophia: Appreciated. Can we test the API before committing?\n\nSolutions Engineer: Definitely. I'll create a sandbox account for you with full API access. You can test all integrations before going live.\n\nSophia: Perfect. Send me the API documentation and sandbox credentials.\n\nSolutions Engineer: Will do! I'll also include code samples for CRM integration. Should have everything to you by end of day."
+    },
+    {
+      "id": "monday-email-1",
+      "title": "Feature Request - Team Collab",
+      "date": "2025-11-06T11:30:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Product Team",
+        "Brandon Thompson"
+      ],
+      "type": "email",
+      "dataSource": "monday-emails",
+      "content": "From: Brandon Thompson <brandon@teamcollab.io>\nTo: Monday.com Product Team\nSubject: Feature Request - Gantt Chart Dependencies\n\nHi Monday Team,\n\nWe're currently evaluating Monday.com for our product development workflow. We love the visual boards and automation, but we need more advanced Gantt chart capabilities.\n\nSpecifically:\n1. Automatic task rescheduling when dependencies change\n2. Critical path visualization\n3. Resource leveling across dependent tasks\n4. Drag-to-adjust dependencies directly in Gantt view\n\nAre these features on your roadmap? This is make-or-break for us as we manage complex, interdependent product releases.\n\nThanks,\nBrandon\n\n---\n\nFrom: Monday.com Product Team\nTo: Brandon Thompson\n\nBrandon,\n\nGreat timing! We're actually launching advanced Gantt features next month (April 2024). Here's what's coming:\n\n\u2705 **Auto-rescheduling**: When a task slips, all dependent tasks automatically adjust\n\u2705 **Critical Path**: Highlighted in red so you can focus on what matters\n\u2705 **Drag-to-adjust**: Change dependencies visually without opening task details\n\n\u274c **Resource leveling**: This is planned for Q3 2024. You can currently see resource allocation, but automatic leveling isn't available yet.\n\nWould you like to join our beta program? You'd get early access to test these features before general release.\n\nBest,\nMonday.com Product Team\n\n---\n\nFrom: Brandon Thompson\nTo: Monday.com Product Team\n\nThat's fantastic! Yes, we'd love to join the beta. When does it start?\n\nFor resource leveling - can you give me an update when that's closer to release? That's important but not critical for our initial launch.\n\nBrandon\n\n---\n\nFrom: Monday.com Product Team\nTo: Brandon Thompson\n\nBeta starts next week! I'll add you to the list. You'll receive an email with instructions and a feedback form.\n\nWe'll definitely notify you about resource leveling in Q3. I'm adding you to our early access list for that feature too.\n\nExcited to have you as a beta tester!\n\nMonday.com Product Team"
+    },
+    {
+      "id": "monday-email-2",
+      "title": "Partnership Proposal - Digital Agency",
+      "date": "2025-11-06T15:00:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Partnerships Team",
+        "Marcus Johnson"
+      ],
+      "type": "email",
+      "dataSource": "monday-emails",
+      "content": "From: Monday.com Partnerships Team\nTo: Marcus Johnson <marcus@digitalagency.com>\nSubject: Partner Program Invitation - Digital Agency Co\n\nMarcus,\n\nWe've noticed Digital Agency Co is using Monday.com for multiple client projects. Your team seems to love our platform!\n\nWe'd like to invite you to our Agency Partner Program:\n\n**Benefits:**\n- 30% recurring commission on all referrals\n- Co-marketing opportunities (case studies, webinars)\n- White-label option for client-facing boards\n- Partner directory listing\n- Dedicated partner success manager\n\n**Your Opportunity:**\nMany agencies refer 3-5 clients monthly. At $500 average monthly deal size, that's $450-750/month in passive income.\n\nInterested in learning more?\n\nBest,\nMonday.com Partnerships Team\n\n---\n\nFrom: Marcus Johnson\nTo: Monday.com Partnerships Team\n\nThis sounds interesting! A few questions:\n\n1. What's required from us to maintain partner status?\n2. Is there any exclusivity requirement?\n3. Can we integrate Monday.com into our service packages?\n4. What's the commission structure for our own account as partners?\n\nWe currently have 15 active clients who could benefit from Monday.com.\n\nMarcus\n\n---\n\nFrom: Monday.com Partnerships Team\nTo: Marcus Johnson\n\nGreat questions, Marcus!\n\n1. **Requirements**: Minimum 2 qualified referrals per quarter, participation in quarterly partner training.\n\n2. **Exclusivity**: None required. We just ask that you actively recommend Monday.com when it's a good fit.\n\n3. **Service Packages**: Absolutely! Many partners bundle Monday.com setup and training into their service offerings.\n\n4. **Partner Discount**: 25% off your own Monday.com subscription.\n\nWith 15 potential client referrals, you could generate $2,250-$3,750 monthly recurring commission. Plus savings on your own account.\n\nShall we schedule a call to discuss the details?\n\nMonday.com Partnerships Team"
+    },
+    {
+      "id": "monday-meeting-1",
+      "title": "Sprint Planning - Agile Master Inc",
+      "date": "2025-11-06T10:00:00Z",
+      "duration": "50 min",
+      "participants": [
+        "Samuel Brown",
+        "Implementation Specialist",
+        "Angela Davis",
+        "Dev Team"
+      ],
+      "type": "meeting",
+      "dataSource": "monday-meetings",
+      "content": "Implementation Specialist: Angela, let's set up your sprint planning workflow in Monday.com.\n\nAngela: Perfect. We run 2-week sprints with daily standups. Can Monday.com support that structure?\n\nImplementation Specialist: Absolutely. I'll show you our Scrum template. See this board? Backlog, Sprint Planning, In Progress, Review, Done.\n\nAngela: We also need a separate backlog board. Product and engineering work from different backlogs.\n\nImplementation Specialist: Easy. We'll create two boards - Product Backlog and Engineering Backlog. Sprint Planning board pulls from both.\n\nDev Team: How do we handle story points and velocity tracking?\n\nImplementation Specialist: Built in. Each task has a numbers column for story points. The sprint board automatically sums them.\n\nAngela: Can we see historical velocity to plan capacity?\n\nImplementation Specialist: Yes! Let me show you the dashboard. This widget shows velocity by sprint. You can see your team averaged 42 points per sprint over the last 6 sprints.\n\nDev Team: That's helpful for planning. What about tracking bugs separately?\n\nImplementation Specialist: Good question. You can add a status column to differentiate user stories, bugs, and technical debt. Then filter the sprint board by type.\n\nAngela: We also do daily standups. Can Monday.com help with that?\n\nImplementation Specialist: We have an updates section. Each morning, team members can post their update: what they did yesterday, what they're doing today, and any blockers.\n\nDev Team: Do we have to open Monday.com to see updates?\n\nImplementation Specialist: No. You can get daily digest emails at 8 AM with everyone's updates. Perfect for async standups.\n\nAngela: Async standups would save us 30 minutes daily. That's 2.5 hours per sprint.\n\nImplementation Specialist: Exactly! Many agile teams use Monday.com for async standups and only meet when blockers are flagged.\n\nDev Team: What about burndown charts?\n\nImplementation Specialist: Another dashboard widget. Let me add one... there! This shows ideal burndown versus actual. You can see if you're on track mid-sprint.\n\nAngela: This is exactly what we need. How long does setup take?\n\nImplementation Specialist: I can set up the boards today. Template implementation takes about 2 hours. Then I'll train your team.\n\nDev Team: When can we start using it?\n\nImplementation Specialist: You can start your next sprint on Monday.com. That gives us a week to set up and train.\n\nAngela: Perfect. Let's do it. Our sprint starts next Monday, so we have time.\n\nImplementation Specialist: Great! I'll have everything configured by Wednesday, and we'll do team training on Thursday."
+    },
+    {
+      "id": "monday-meeting-2",
+      "title": "Onboarding Session - Startup Ventures",
+      "date": "2025-11-06T09:30:00Z",
+      "duration": "40 min",
+      "participants": [
+        "Samuel Brown",
+        "Customer Success Manager",
+        "Rebecca White",
+        "Product Team"
+      ],
+      "type": "meeting",
+      "dataSource": "monday-meetings",
+      "content": "Customer Success Manager: Rebecca, welcome to Monday.com! Let's get your product team set up for success.\n\nRebecca: Thanks! We're excited. Our team is small - just 6 people - but we're growing fast.\n\nCustomer Success Manager: Perfect size to start. Tell me about your current workflow.\n\nRebecca: Right now it's chaos. Ideas in Notion, tasks in Asana, feedback in Intercom, and roadmap in Google Sheets.\n\nCustomer Success Manager: Let's consolidate everything into Monday.com. We'll create three boards: Ideas, Roadmap, and Active Development.\n\nProduct Team: How do we capture ideas from multiple sources?\n\nCustomer Success Manager: Great question. We can integrate with Intercom to automatically create items when customers submit feedback. Same with Slack.\n\nRebecca: That would save us hours of manual data entry.\n\nCustomer Success Manager: Exactly. Let me show you the Ideas board template. See these columns? Source, Votes, Impact, Effort, Priority.\n\nProduct Team: Can we let the whole company vote on ideas?\n\nCustomer Success Manager: Yes! You can set permissions so anyone can view and vote, but only product team can move items to Roadmap.\n\nRebecca: That's democratic. We want engineering and sales to have a voice.\n\nCustomer Success Manager: Now, the Roadmap board. This shows planned features by quarter with status: Researching, Designing, Developing, Launched.\n\nProduct Team: Can stakeholders see this? We get constant \"what are you working on\" questions.\n\nCustomer Success Manager: Absolutely. Share a read-only link. They can see the roadmap without accessing your work boards.\n\nRebecca: That'll reduce interruptions. What about linking features to development tasks?\n\nCustomer Success Manager: Use the connected boards feature. Each roadmap item links to detailed tasks in Active Development board.\n\nProduct Team: So we can see high-level roadmap and drill into technical details?\n\nCustomer Success Manager: Exactly. Product team lives in Roadmap view, engineers live in Active Development, everyone stays aligned.\n\nRebecca: How do we track progress on features across multiple sprints?\n\nCustomer Success Manager: Progress column with milestones. As engineers complete tasks, the feature progress updates automatically.\n\nProduct Team: This is way better than our current spreadsheet!\n\nCustomer Success Manager: One more thing - let me show you the dashboard. This gives leadership a one-page view: features in progress, capacity, timeline.\n\nRebecca: Our CEO will love this. She's constantly asking for status updates.\n\nCustomer Success Manager: Share the dashboard with her. Real-time updates, no more status meeting needed.\n\nProduct Team: When can we start migrating our data?\n\nCustomer Success Manager: I can help you import from Asana today. Should take about an hour. Then we'll set up the integrations.\n\nRebecca: Let's do it. I'll have the team start using Monday.com by next week."
+    },
+    {
+      "id": "monday-form-1",
+      "title": "New Project Request - Workflow Solutions",
+      "date": "2025-11-06T16:00:00Z",
+      "duration": "Form Submission",
+      "participants": [
+        "Samuel Brown",
+        "COO Sophia Lee"
+      ],
+      "type": "form",
+      "dataSource": "monday-forms",
+      "content": "**Monday.com Project Intake Form**\n\n---\n\n**Submitted by:** Sophia Lee (COO)\n**Date:** March 17, 2024\n**Priority:** High\n\n---\n\n**Project Name:** Customer Portal Redesign\n\n**Business Goal:**\nImprove customer self-service capabilities and reduce support ticket volume by 30%\n\n**Target Launch Date:** June 1, 2024\n\n**Budget:** $125,000\n\n**Team Size Needed:** 5-7 people (Design, Frontend, Backend, QA)\n\n**Success Metrics:**\n- 30% reduction in support tickets\n- 50% increase in customer portal usage\n- Net Promoter Score improvement from 7 to 8+\n\n**Key Requirements:**\n1. Modern, mobile-responsive design\n2. Self-service knowledge base with AI search\n3. Billing and invoice management\n4. Support ticket creation and tracking\n5. Account settings and user management\n\n**Technical Constraints:**\n- Must integrate with existing Salesforce CRM\n- GDPR and CCPA compliance required\n- Support 10,000+ concurrent users\n\n**Stakeholders:**\n- Sophia Lee (Executive Sponsor)\n- Kevin Anderson (Project Owner)\n- Customer Success Team (End Users)\n- IT Security Team (Approval Required)\n\n**Additional Notes:**\nThis is our top priority for Q2. We've already validated the design with 20 customers. They're eager for these improvements. Current portal hasn't been updated in 4 years.\n\n**Dependencies:**\n- Salesforce API documentation (In Progress)\n- Design system completion (Expected March 25)\n- Security audit approval (Pending)\n\n---\n\n**Auto-Generated Actions:**\n\u2705 Project board created automatically\n\u2705 Kevin Anderson assigned as Project Owner\n\u2705 Calendar invite sent to stakeholders for kickoff meeting\n\u2705 Budget allocated in finance system\n\u2705 Notification sent to resource managers to assign team\n\n**Next Steps:**\nKickoff meeting scheduled for March 20, 2024 at 10 AM"
+    }
+  ],
+  "recentActivity": []
+}

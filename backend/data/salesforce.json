@@ -1,0 +1,245 @@
+{
+  "id": "salesforce",
+  "name": "Salesforce",
+  "connected": false,
+  "dataSources": [
+    {
+      "id": "sf-calls",
+      "name": "Phone Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": true,
+      "count": 3
+    },
+    {
+      "id": "sf-emails",
+      "name": "Email Activity",
+      "type": "email",
+      "icon": "mail",
+      "connected": true,
+      "count": 2
+    },
+    {
+      "id": "sf-meetings",
+      "name": "Meeting Transcripts",
+      "type": "transcript",
+      "icon": "video",
+      "connected": false,
+      "count": 1
+    }
+  ],
+  "stats": {
+    "contacts": 6,
+    "deals": 3,
+    "companies": 6,
+    "lastSync": null
+  },
+  "contacts": [
+    {
+      "id": "salesforce-1",
+      "name": "Sarah Chen",
+      "email": "sarah.chen@acmecorp.com",
+      "phone": "(555) 789-1234",
+      "company": "Acme Corp",
+      "title": "VP of Technology",
+      "status": "Active",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T10:30:00Z",
+      "notes": "Team grew from 50 to 120 users. Currently on Professional plan, upgrading to Enterprise for $75K annually. Needs custom dashboards, API access, and 24/7 support. Implementation: 2 weeks, 70 user migration."
+    },
+    {
+      "id": "salesforce-2",
+      "name": "Michael Rodriguez",
+      "email": "michael@techglobal.com",
+      "phone": "(555) 890-2345",
+      "company": "Tech Global",
+      "title": "Director of Operations",
+      "status": "At Risk",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T14:20:00Z",
+      "notes": "Critical: Data sync issue for 3 days affecting board meetings. Enterprise customer. Received $5K credit and manual backfill. Issue resolved, needs quality control improvements."
+    },
+    {
+      "id": "salesforce-3",
+      "name": "Robert Martinez",
+      "email": "r.martinez@enterprisecorp.com",
+      "phone": "(555) 901-3456",
+      "company": "Enterprise Corp",
+      "title": "CFO",
+      "status": "Active",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T16:00:00Z",
+      "notes": "150 users (up from 100). Annual renewal: $135K with 10% loyalty discount. Premium Support upgrade (2hr response time). Advanced Analytics module added free ($10K value). Total value: $25K in additions."
+    },
+    {
+      "id": "salesforce-4",
+      "name": "Lisa Chen",
+      "email": "lisa@dataflow.com",
+      "phone": "(555) 012-4567",
+      "company": "DataFlow Inc",
+      "title": "Technical Director",
+      "status": "Prospect",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T10:30:00Z",
+      "notes": "Evaluating platform. Needs: SAP ERP sync, webhooks, bulk import/export (100K records), Azure AD SSO. Pre-built SAP connector available. Implementation: 2-3 weeks. Technical demo scheduled Thursday."
+    },
+    {
+      "id": "salesforce-5",
+      "name": "Jennifer Williams",
+      "email": "jennifer@company.com",
+      "phone": "(555) 123-5678",
+      "company": "Executive Team (Internal)",
+      "title": "CEO",
+      "status": "Active",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T14:00:00Z",
+      "notes": "Q1 Review: $2.3M closed (15% above target), Q2 pipeline $5.8M. Churn: 4.2% (lowest ever). Investing 30% dev budget in AI features (40% time savings). Q4 profitability target, 18mo cash runway."
+    },
+    {
+      "id": "salesforce-6",
+      "name": "Amanda Foster",
+      "email": "amanda@company.com",
+      "phone": "(555) 234-6789",
+      "company": "Executive Team (Internal)",
+      "title": "VP Sales",
+      "status": "Active",
+      "source": "Salesforce",
+      "created_at": "2025-11-11T14:00:00Z",
+      "notes": "Q1: $2.3M closed, Q2 pipeline: $5.8M. Enterprise push driving CAC up 22% but LTV is 3x higher. Q3 AI feature launch planned. Focus: Optimize enterprise sales process."
+    }
+  ],
+  "deals": [
+    {
+      "id": "salesforce-deal-1",
+      "title": "Acme Corp - Enterprise Upgrade",
+      "value": 75000,
+      "stage": "negotiation",
+      "contact": "Sarah Chen",
+      "company": "Acme Corp",
+      "closeDate": "2025-11-30",
+      "notes": "Upgrading from Professional to Enterprise. 120 users (grew from 50). Includes custom dashboards, API access, dedicated account manager, 24/7 support. Demo scheduled Tuesday 2 PM."
+    },
+    {
+      "id": "salesforce-deal-2",
+      "title": "Enterprise Corp - Annual Renewal",
+      "value": 135000,
+      "stage": "closed_won",
+      "contact": "Robert Martinez",
+      "company": "Enterprise Corp",
+      "closeDate": "2025-12-15",
+      "notes": "150 users, $135K/year (10% loyalty discount). Premium Support + Advanced Analytics included. $25K in added value. Contract signed."
+    },
+    {
+      "id": "salesforce-deal-3",
+      "title": "DataFlow Inc - New Enterprise Deal",
+      "value": 85000,
+      "stage": "demo_scheduled",
+      "contact": "Lisa Chen",
+      "company": "DataFlow Inc",
+      "closeDate": "2025-11-15",
+      "notes": "Evaluating vs 3 vendors. Needs SAP integration, webhooks, bulk import/export, Azure AD SSO. Technical demo Thursday. Decision by Friday. 2-3 week implementation."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "sf-trans-1",
+      "title": "Q4 Sales Review with Acme Corp",
+      "date": "2025-11-11T10:30:00Z",
+      "duration": "45 min",
+      "participants": [
+        "Samuel Brown",
+        "Sarah Chen",
+        "John Doe",
+        "Mike Wilson"
+      ],
+      "type": "sales_call",
+      "dataSource": "sf-calls",
+      "status": "completed",
+      "summary": "Quarterly review meeting discussing renewal terms and upsell opportunities",
+      "content": "Sales Rep John: Good morning Sarah, thanks for joining our Q4 review call. Let's discuss your current usage and future needs.\n\nSarah Chen: Thank you for having me. We've been very happy with the platform. Our team has grown from 50 to 120 users this quarter.\n\nJohn: That's fantastic growth! I see you're currently on our Professional plan. With 120 users, you might benefit from our Enterprise package which includes advanced analytics and priority support.\n\nSarah: We've actually been experiencing some limitations with reporting. What does the Enterprise package offer?\n\nJohn: The Enterprise plan includes custom dashboards, API access, dedicated account manager, and 24/7 support. Given your growth trajectory, it would be $75,000 annually.\n\nSarah: That's within our budget. Can we schedule a demo of the advanced features?\n\nMike Wilson: Absolutely! I'll be your dedicated account manager. How about next Tuesday at 2 PM?\n\nSarah: Perfect. Let's move forward with the upgrade. I'll need to get final approval from our CFO, but I'm confident we can close this by end of month.\n\nJohn: Excellent! I'll send over the proposal today. This upgrade will really help support your continued growth.\n\nSarah: One more thing - can we discuss implementation timeline? We need to migrate 70 additional users smoothly.\n\nMike: Absolutely. We typically complete enterprise migrations within 2 weeks with zero downtime. I'll put together a detailed implementation plan.\n\nSarah: Great! Looking forward to working more closely with your team."
+    },
+    {
+      "id": "sf-trans-2",
+      "title": "Customer Escalation - Tech Global",
+      "date": "2025-11-11T14:20:00Z",
+      "duration": "30 min",
+      "participants": [
+        "Samuel Brown",
+        "Michael Rodriguez",
+        "Support Lisa",
+        "Manager Tom"
+      ],
+      "type": "support_call",
+      "dataSource": "sf-calls",
+      "status": "resolved",
+      "summary": "Critical bug reported causing data sync issues",
+      "content": "Support Lisa: Hi Michael, I understand you're experiencing sync issues. Can you describe what's happening?\n\nMichael Rodriguez: Yes, our data hasn't synced for 3 days. This is critical - we have board meetings and need updated reports.\n\nLisa: I completely understand the urgency. Let me pull up your account... I see the sync errors. This needs immediate escalation. Let me get my manager involved.\n\nTom Brown: Hi Michael, this is Tom, the support manager. I've reviewed your account and identified a bug in our latest release affecting enterprise customers. We take this very seriously.\n\nMichael: This is unacceptable. We're paying for enterprise support and this shouldn't happen.\n\nTom: You're absolutely right. Here's what we're doing: Our engineering team is rolling back the problematic update right now. We'll have your data syncing within 2 hours. Additionally, I'm crediting your account $5,000 for this disruption.\n\nMichael: I appreciate the quick response. What about the data we missed?\n\nTom: We'll run a manual backfill for the past 3 days once sync is restored. You'll have complete data by end of day.\n\nMichael: Okay, that works. I need email confirmation with the timeline.\n\nTom: Sending it right now. I'll personally monitor this until resolution and follow up with you in 2 hours.\n\nMichael: Thank you. I expect better quality control going forward.\n\nTom: Absolutely. We're implementing additional testing protocols to prevent this. I'll schedule a call next week to discuss our improvements."
+    },
+    {
+      "id": "sf-trans-3",
+      "title": "Product Roadmap Discussion",
+      "date": "2025-11-11T09:00:00Z",
+      "duration": "60 min",
+      "participants": [
+        "Samuel Brown",
+        "Sarah Chen",
+        "Product Manager Jane",
+        "Engineer Bob"
+      ],
+      "type": "product_meeting",
+      "dataSource": "sf-calls",
+      "status": "completed",
+      "summary": "Discussed upcoming features and customer feedback for Q2 roadmap planning",
+      "content": "Jane: Thanks everyone for joining our product roadmap session. Sarah, we'd love your input on features you'd like to see.\n\nSarah Chen: We really need better mobile app functionality. Our field sales team struggles with the current mobile experience.\n\nBob: That's great feedback. Mobile is actually our top priority for Q2. What specific features are most important?\n\nSarah: Offline mode is critical. Our reps often work in areas with poor connectivity. They need to access customer data and log activities offline.\n\nJane: Perfect timing! We're designing offline sync capabilities. It should be ready for beta testing in May.\n\nSarah: That would be game-changing for us. What about bulk actions on mobile?\n\nBob: Can you give me an example of what you need?\n\nSarah: Our reps need to update multiple opportunities at once after trade shows. Currently they have to do it one by one.\n\nJane: Great use case. I'm adding that to our mobile bulk actions feature. Anything else?\n\nSarah: Integration with LinkedIn Sales Navigator would be huge. We use it heavily for prospecting.\n\nBob: That's been requested by several customers. We can prioritize it if you're willing to be a beta tester.\n\nSarah: Absolutely! We'd love to help test new features.\n\nJane: Excellent! I'll add you to our early access program. You'll get features 2-4 weeks before general release.\n\nSarah: That works perfectly. When can we expect the mobile updates?\n\nBob: Offline mode beta in May, bulk actions in June, LinkedIn integration in July. We'll keep you updated on exact dates.\n\nJane: I'll send you a detailed roadmap document this week with timelines and feature descriptions."
+    },
+    {
+      "id": "sf-email-1",
+      "title": "Contract Renewal - Enterprise Corp",
+      "date": "2025-11-11T16:00:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Robert Martinez",
+        "Account Manager"
+      ],
+      "type": "contract_renewal",
+      "dataSource": "sf-emails",
+      "status": "completed",
+      "summary": "Annual contract renewal negotiation - $135K deal closed",
+      "content": "From: Robert Martinez <r.martinez@enterprisecorp.com>\nSubject: Contract Renewal - Due Next Month\n\nHi Team, Our annual contract is up for renewal next month. We've been generally satisfied, but I need to discuss: 1. Pricing - We're now at 150 users (up from 100). What's the renewal cost? 2. Support response times have been slower lately. 3. We need better reporting capabilities. Our budget meeting is next week. Thanks, Robert\n\n---\n\nFrom: account@company.com\nSubject: RE: Contract Renewal\n\nHi Robert, **Pricing for 150 users:** $135,000/year (10% loyalty discount applied, saves you $15,000). **Support improvements:** Upgrading you to Premium Support (no additional cost), 2-hour response time guaranteed. **Reporting:** Enabling Advanced Analytics module free ($10K value). **Total: $135,000/year with $25,000 in added value**\n\n---\n\nFrom: Robert Martinez\nSubject: RE: Contract Renewal\n\nThis works well! Let's proceed with $135,000/year. Please send the contract. Thanks!"
+    },
+    {
+      "id": "sf-email-2",
+      "title": "Integration Question - DataFlow Inc",
+      "date": "2025-11-11T10:30:00Z",
+      "duration": "Email",
+      "participants": [
+        "Samuel Brown",
+        "Lisa Chen"
+      ],
+      "type": "technical_inquiry",
+      "dataSource": "sf-emails",
+      "status": "completed",
+      "summary": "Technical questions about API integration capabilities",
+      "content": "From: Lisa Chen <lisa@dataflow.com>\nSubject: API Integration Questions\n\nHello, We're evaluating your platform. We need: 1. Real-time sync with SAP ERP 2. Custom webhooks for deal stage changes 3. Bulk data import/export 4. SSO with Azure AD\n\nQuestions: Do you have SAP connectors? What's the webhook delivery guarantee? API rate limits? Implementation timeline? Deciding between 3 vendors by Friday. Best, Lisa\n\n---\n\nFrom: support@company.com\nSubject: RE: API Integration Questions\n\nHi Lisa, **1. SAP:** Pre-built connector, real-time bidirectional sync, 15-min setup. **2. Webhooks:** 99.9% delivery, automatic retries (3 attempts). **3. Bulk:** API 10K requests/hour, bulk import 100K records. **4. Azure AD SSO:** SAML 2.0 supported, setup <1 hour. **Implementation:** 2-3 weeks. Available Thursday for technical demo? Best, Support Team"
+    },
+    {
+      "id": "sf-meeting-1",
+      "title": "Executive Business Review - Q1 2024",
+      "date": "2025-11-11T14:00:00Z",
+      "duration": "90 min",
+      "participants": [
+        "Samuel Brown",
+        "CEO Jennifer",
+        "CFO Michael",
+        "VP Sales Amanda"
+      ],
+      "type": "executive_review",
+      "dataSource": "sf-meetings",
+      "status": "completed",
+      "summary": "Quarterly business review with executive team - $2.3M closed, 4.2% churn",
+      "content": "Jennifer (CEO): Thank you all for joining our Q1 business review. Let's start with the numbers.\n\nAmanda (VP Sales): Q1 was strong. We closed $2.3M in new business, 15% above target. Pipeline for Q2 is looking healthy at $5.8M.\n\nMichael (CFO): Revenue growth is excellent, but I'm concerned about our customer acquisition cost. It's up 22% from last quarter.\n\nAmanda: That's due to our enterprise push. We're targeting larger deals which require longer sales cycles, but the lifetime value is 3x higher.\n\nJennifer: What's our churn rate?\n\nCustomer Success: Down to 4.2% annually, our lowest ever. The new onboarding program is working. Customer sat scores are up 18 points.\n\nMichael: That's great news. What about product development costs?\n\nJennifer: We're investing heavily in AI features. It's 30% of our dev budget, but early feedback is phenomenal. Beta customers report 40% time savings.\n\nAmanda: That's a huge selling point. Can we get it to GA by Q3?\n\nJennifer: We're targeting mid-Q3. Marketing should prepare the launch campaign.\n\nMichael: From a financial perspective, we're on track for profitability by Q4. Cash runway is 18 months.\n\nJennifer: Great work everyone. Key priorities for Q2: 1. Launch AI features 2. Expand support team 3. Optimize enterprise sales process 4. Maintain sub-5% churn. Let's reconvene in June for Q2 review."
+    }
+  ],
+  "recentActivity": []
+}

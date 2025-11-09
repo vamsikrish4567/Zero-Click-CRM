@@ -1,0 +1,455 @@
+{
+  "id": "hubspot",
+  "name": "HubSpot",
+  "connected": true,
+  "dataSources": [
+    {
+      "id": "hs-calls",
+      "name": "Phone Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": true,
+      "count": 4
+    },
+    {
+      "id": "hs-emails",
+      "name": "Email Activity",
+      "type": "email",
+      "icon": "mail",
+      "connected": true,
+      "count": 3
+    },
+    {
+      "id": "hs-meetings",
+      "name": "Meeting Transcripts",
+      "type": "transcript",
+      "icon": "video",
+      "connected": true,
+      "count": 2
+    },
+    {
+      "id": "hs-whatsapp",
+      "name": "WhatsApp Messages",
+      "type": "message",
+      "icon": "message",
+      "connected": false,
+      "count": 5
+    }
+  ],
+  "stats": {
+    "contacts": 5,
+    "deals": 3,
+    "companies": 5,
+    "lastSync": "2025-11-09T04:29:12.399892Z"
+  },
+  "contacts": [
+    {
+      "id": "hubspot-1",
+      "name": "Sarah Mitchell",
+      "email": "sarah@enterprisetech.com",
+      "phone": "(555) 234-5678",
+      "company": "Enterprise Tech Solutions",
+      "title": "Director of Sales Operations",
+      "status": "Active",
+      "source": "HubSpot",
+      "created_at": "2025-11-08T10:00:00Z",
+      "notes": "Struggling with lead management, handling 2,000 leads/month with 8% close rate. Looking for 60-day implementation."
+    },
+    {
+      "id": "hubspot-2",
+      "name": "John Davis",
+      "email": "john@techcorp.com",
+      "phone": "(555) 345-6789",
+      "company": "TechCorp Industries",
+      "title": "VP of Operations",
+      "status": "Active",
+      "source": "HubSpot",
+      "created_at": "2025-11-08T14:30:00Z",
+      "notes": "Using HubSpot for 3 months, 85% daily active usage. Email automation saving 15 hours/week. Interested in reporting dashboards and AI features."
+    },
+    {
+      "id": "hubspot-3",
+      "name": "Emma Richardson",
+      "email": "emma@marketingpro.com",
+      "phone": "(555) 456-7890",
+      "company": "Marketing Pro Agency",
+      "title": "Marketing Director",
+      "status": "Active",
+      "source": "HubSpot",
+      "created_at": "2025-11-08T11:00:00Z",
+      "notes": "Running campaigns manually. Interested in Marketing Hub for automation. Expecting $50K additional revenue in 6 months. On 14-day trial."
+    },
+    {
+      "id": "hubspot-4",
+      "name": "Robert Chen",
+      "email": "robert@globalenterprises.com",
+      "phone": "(555) 567-8901",
+      "company": "Global Enterprises Ltd",
+      "title": "Chief Technology Officer",
+      "status": "Active",
+      "source": "HubSpot",
+      "created_at": "2025-11-08T10:00:00Z",
+      "notes": "Professional plan customer. Managed 15,000+ contacts, sent 200,000+ emails, closed $2.3M in deals. Subscription renews April 15th. Considering Enterprise upgrade."
+    },
+    {
+      "id": "hubspot-5",
+      "name": "Jessica Martinez",
+      "email": "jessica@innovativesolutions.com",
+      "phone": "(555) 678-9012",
+      "company": "Innovative Solutions Inc",
+      "title": "CEO",
+      "status": "Active",
+      "source": "HubSpot",
+      "created_at": "2025-11-08T09:00:00Z",
+      "notes": "Q1 campaigns: 50,000 emails sent, 32% open rate, 8.5% click rate, 425 leads generated, $127,500 revenue. Top campaigns: Product Launch (45% open), Success Stories (12% click)."
+    }
+  ],
+  "deals": [
+    {
+      "id": "hubspot-deal-1",
+      "title": "Enterprise Tech Solutions - Professional Tier",
+      "value": 15000,
+      "stage": "demo_scheduled",
+      "contact": "Sarah Mitchell",
+      "company": "Enterprise Tech Solutions",
+      "closeDate": "2025-12-15",
+      "notes": "Annual contract, demo scheduled for next week. Target 60-day implementation. 5 sales reps, 2,000 leads/month."
+    },
+    {
+      "id": "hubspot-deal-2",
+      "title": "Marketing Pro Agency - Marketing Hub Upgrade",
+      "value": 9600,
+      "stage": "trial",
+      "contact": "Emma Richardson",
+      "company": "Marketing Pro Agency",
+      "closeDate": "2025-11-22",
+      "notes": "$800/month Marketing Hub. 14-day trial active. Projected $50K additional revenue. Manual campaigns need automation."
+    },
+    {
+      "id": "hubspot-deal-3",
+      "title": "Global Enterprises - Annual Renewal + Enterprise Upgrade",
+      "value": 36000,
+      "stage": "negotiation",
+      "contact": "Robert Chen",
+      "company": "Global Enterprises Ltd",
+      "closeDate": "2025-04-15",
+      "notes": "Current Professional customer ($18K/year). Managed 15K+ contacts, sent 200K+ emails, closed $2.3M. Renewal due April 15. Considering Enterprise with 10% early renewal discount."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "hs-call-1",
+      "title": "Discovery Call - Enterprise Deal",
+      "date": "2025-11-08T10:00:00Z",
+      "duration": "30 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Rep Mike",
+        "Prospect Sarah"
+      ],
+      "type": "sales_call",
+      "dataSource": "hs-calls",
+      "status": "completed",
+      "summary": "Initial discovery call discussing needs and budget",
+      "content": "Mike: Hi Sarah, thanks for taking the time to speak with me today. Can you tell me about your current challenges?\n\nSarah: We're struggling with lead management. Our team is using spreadsheets and it's becoming unmanageable.\n\nMike: How many leads are you handling monthly?\n\nSarah: About 2,000 leads per month across 5 sales reps. We're missing follow-ups and losing deals.\n\nMike: That's significant volume. What's your current close rate?\n\nSarah: Only about 8%. We know we can do better with proper tools.\n\nMike: With HubSpot, our clients typically see 25-40% close rate improvements. How soon are you looking to implement?\n\nSarah: Ideally within 60 days. What's the investment?\n\nMike: For your team size and volume, we're looking at around $15K annually for our Professional tier.\n\nSarah: That's within our budget. What's the next step?\n\nMike: I'll schedule a demo for next week to show you the lead management features. Can you bring your sales manager?\n\nSarah: Yes, I'll make sure she's available."
+    },
+    {
+      "id": "hs-call-2",
+      "title": "Customer Success Check-in",
+      "date": "2025-11-08T14:30:00Z",
+      "duration": "25 min",
+      "participants": [
+        "Samuel Brown",
+        "CS Manager Lisa",
+        "Client John"
+      ],
+      "type": "support_call",
+      "dataSource": "hs-calls",
+      "status": "completed",
+      "summary": "Quarterly check-in on platform usage and satisfaction",
+      "content": "Lisa: Hi John! Let's review your Q1 usage and see how we can help you get more value.\n\nJohn: Great timing. We've been using HubSpot for 3 months now and seeing good results.\n\nLisa: Your team's engagement is excellent - 85% active daily usage. What's working well?\n\nJohn: The email automation is a game-changer. We've saved 15 hours per week.\n\nLisa: That's fantastic! Are there any features you haven't explored yet?\n\nJohn: We haven't set up the reporting dashboards. Is that complicated?\n\nLisa: Not at all. I can walk you through that today or schedule a training session for your team.\n\nJohn: A training session would be better. Can we do it next week?\n\nLisa: Absolutely. I'll also show you our new AI features that just launched.\n\nJohn: AI features sound interesting. What do they do?\n\nLisa: They predict lead scores, suggest best times to contact prospects, and auto-draft personalized emails.\n\nJohn: That could be huge for us. Let's definitely include that in the training."
+    },
+    {
+      "id": "hs-call-3",
+      "title": "Upsell Discussion - Marketing Hub",
+      "date": "2025-11-08T11:00:00Z",
+      "duration": "20 min",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager Tom",
+        "Client Emma"
+      ],
+      "type": "sales_call",
+      "dataSource": "hs-calls",
+      "status": "completed",
+      "summary": "Discussing Marketing Hub upgrade for campaign automation",
+      "content": "Tom: Emma, I noticed you're manually running campaigns. Our Marketing Hub could automate that entire process.\n\nEmma: We've been considering it. What's the benefit?\n\nTom: You'd save 20+ hours per week, increase email open rates by 30%, and get advanced analytics.\n\nEmma: What's the pricing?\n\nTom: $800/month, and based on your current volume, we project $50K additional revenue in 6 months.\n\nEmma: That ROI is compelling. Can we trial it?\n\nTom: Yes, 14-day free trial. I can enable it today.\n\nEmma: Let's do it. If it works as promised, we'll upgrade permanently."
+    },
+    {
+      "id": "hs-call-4",
+      "title": "Technical Support - Integration Issue",
+      "date": "2025-11-08T16:00:00Z",
+      "duration": "35 min",
+      "participants": [
+        "Samuel Brown",
+        "Support Engineer Alex",
+        "Client DevOps Team"
+      ],
+      "type": "support_call",
+      "dataSource": "hs-calls",
+      "status": "resolved",
+      "summary": "Troubleshooting API integration with custom CRM",
+      "content": "Alex: I see you're having issues with the API integration. Let's troubleshoot.\n\nDevOps: Our custom CRM isn't syncing contacts properly. We're getting 401 errors.\n\nAlex: That's an authentication issue. Let me check your API key... I see it expired last week.\n\nDevOps: We didn't know keys expire! How do we prevent this?\n\nAlex: I'll generate a new key and show you how to set up expiration alerts.\n\nDevOps: Great. We also want to sync in real-time instead of hourly batches.\n\nAlex: You'll need to use webhooks instead of polling. Let me send you the documentation.\n\nDevOps: Can you help us implement that?\n\nAlex: Yes, I'll schedule a 2-hour technical session next week to set it up together."
+    },
+    {
+      "id": "hs-email-1",
+      "title": "Campaign Performance Report - Q1",
+      "date": "2025-11-08T09:00:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Marketing Manager",
+        "Client"
+      ],
+      "type": "campaign_report",
+      "dataSource": "hs-emails",
+      "status": "completed",
+      "summary": "Q1 email campaign results and recommendations",
+      "content": "Subject: Your Q1 Campaign Results Are In! 🎉\n\nHi Jessica,\n\nGreat news! Your Q1 email campaigns delivered outstanding results:\n\n📊 Key Metrics:\n- Total emails sent: 50,000\n- Open rate: 32% (industry avg: 21%)\n- Click rate: 8.5% (industry avg: 3.2%)\n- Conversions: 425 leads (0.85% conversion rate)\n- Revenue generated: $127,500\n\n🚀 Top Performing Campaigns:\n1. Product Launch Announcement - 45% open rate\n2. Customer Success Stories - 12% click rate\n3. Limited Time Offer - 15 conversions per 1000 sends\n\n💡 Recommendations for Q2:\n1. Double down on success stories (highest engagement)\n2. Implement A/B testing for subject lines\n3. Add video content (our clients see 300% boost)\n4. Increase send frequency from 2x to 3x per month\n\nLet's schedule a call to discuss Q2 strategy?\n\nBest,\nYour HubSpot Team"
+    },
+    {
+      "id": "hs-email-2",
+      "title": "Account Renewal Reminder",
+      "date": "2025-11-08T10:00:00Z",
+      "duration": "Email",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager",
+        "Client"
+      ],
+      "type": "renewal_notice",
+      "dataSource": "hs-emails",
+      "status": "completed",
+      "summary": "Annual renewal approaching with upgrade options",
+      "content": "Subject: Your HubSpot Subscription Renews in 30 Days\n\nHi Robert,\n\nYour annual HubSpot subscription renews on April 15th. Based on your usage this year:\n\n✅ You've:\n- Managed 15,000+ contacts\n- Sent 200,000+ emails\n- Closed $2.3M in deals through the platform\n- Saved 500+ hours with automation\n\n💰 Renewal Details:\n- Current Plan: Professional ($18,000/year)\n- Renewal Price: $18,000 (no increase!)\n- Early renewal bonus: 10% discount if you renew today ($16,200)\n\n⬆️ Upgrade Options:\n- Enterprise Plan: $36,000/year\n- Includes: Advanced reporting, custom objects, 24/7 support\n- Additional value: $15,000 in consulting credits\n\nWant to discuss? Reply to schedule a call.\n\nBest,\nYour Account Manager"
+    },
+    {
+      "id": "hs-email-3",
+      "title": "New Feature Announcement - AI Tools",
+      "date": "2025-11-08T08:00:00Z",
+      "duration": "Email",
+      "participants": [
+        "Samuel Brown",
+        "Product Team",
+        "All Users"
+      ],
+      "type": "product_update",
+      "dataSource": "hs-emails",
+      "status": "completed",
+      "summary": "Announcing new AI-powered features for all users",
+      "content": "Subject: 🤖 NEW: AI-Powered Tools Now Available!\n\nExciting news! We've just launched AI-powered features in your HubSpot account:\n\n🎯 Smart Lead Scoring:\n- Predicts which leads are most likely to convert\n- Automatically prioritizes your pipeline\n- 40% higher close rates in beta testing\n\n✍️ AI Email Writer:\n- Generates personalized emails in seconds\n- Learns your brand voice\n- A/B tests automatically\n\n📊 Predictive Analytics:\n- Forecasts revenue with 95% accuracy\n- Identifies at-risk deals before they're lost\n- Recommends next best actions\n\nThese features are included in your current plan at no extra cost!\n\n🚀 Get Started:\n1. Click 'AI Tools' in your dashboard\n2. Watch the 5-minute tutorial\n3. Start using AI today!\n\nQuestions? Reply to this email.\n\nHappy selling!\nThe HubSpot Team"
+    },
+    {
+      "id": "hs-meeting-1",
+      "title": "Strategy Planning Session - Q2 Goals",
+      "date": "2025-11-08T13:00:00Z",
+      "duration": "60 min",
+      "participants": [
+        "Samuel Brown",
+        "CEO",
+        "Sales VP",
+        "Marketing VP",
+        "HubSpot CSM"
+      ],
+      "type": "strategy_meeting",
+      "dataSource": "hs-meetings",
+      "status": "completed",
+      "summary": "Quarterly business review and Q2 goal setting",
+      "content": "CSM: Thank you all for joining our Q2 planning session. Let's review Q1 and set goals for the next quarter.\n\nCEO: Q1 was strong - we hit 115% of revenue target largely thanks to HubSpot's automation.\n\nSales VP: Our pipeline has grown 40% and sales cycle shortened from 45 to 32 days.\n\nMarketing VP: Marketing qualified leads increased 65%. The attribution reporting helped us cut spend on low-performing channels.\n\nCSM: Excellent results! What are your Q2 goals?\n\nCEO: We want to maintain this momentum and hit $5M in Q2, up from $3.8M in Q1.\n\nSales VP: We need to hire 3 more reps. Can HubSpot scale with us?\n\nCSM: Absolutely. Your current plan supports unlimited users. I recommend adding Sales Hub Enterprise for advanced forecasting.\n\nMarketing VP: We're planning a major product launch in Q2. What campaigns do you recommend?\n\nCSM: I suggest: email sequence, social ads, webinar series, and partner co-marketing. Our launch playbook has generated avg $500K for similar companies.\n\nCEO: That playbook sounds valuable. What's involved?\n\nCSM: 12-week program with templates, weekly coaching, and dedicated support. Investment is $25K but typical ROI is 10-20x.\n\nSales VP: With our growth rate, that's a no-brainer. Let's do it.\n\nCSM: Perfect! I'll get you started next week. Let's also set up monthly check-ins to track progress.\n\nMarketing VP: One more thing - can we integrate HubSpot with our new data warehouse?\n\nCSM: Yes, we have pre-built connectors for all major data warehouses. Our solutions engineer can implement that in 2-3 days.\n\nCEO: Great! Let's formalize all this. Send me a proposal by Friday."
+    },
+    {
+      "id": "hs-meeting-2",
+      "title": "Training Workshop - Advanced Automation",
+      "date": "2025-11-08T10:00:00Z",
+      "duration": "90 min",
+      "participants": [
+        "Samuel Brown",
+        "HubSpot Trainer",
+        "Client Team (12 people)"
+      ],
+      "type": "training_workshop",
+      "dataSource": "hs-meetings",
+      "status": "completed",
+      "summary": "Team training on workflow automation and lead nurturing",
+      "content": "Trainer: Welcome to Advanced Automation workshop! Today we'll build workflows that save you 20+ hours per week.\n\nTeam Lead: We're excited to learn. We're still doing a lot manually.\n\nTrainer: Let's start with lead nurturing. When a lead downloads a whitepaper, what happens?\n\nSales Rep 1: We manually add them to our email list and send follow-ups.\n\nTrainer: That can be 100% automated. Watch this... [builds workflow] Now every whitepaper download triggers: immediate thank you email, 3-day follow-up, 7-day case study, 14-day demo offer.\n\nMarketing Manager: That's exactly what we need! How long does it take to set up?\n\nTrainer: This workflow took 5 minutes. You can clone it for other content types.\n\nSales Rep 2: What about lead scoring? How do we automate that?\n\nTrainer: Great question. [demonstrates] We'll score based on: job title (+10 points), company size (+15), email opens (+5), demo requests (+50). When someone hits 75 points, sales gets notified instantly.\n\nTeam Lead: Can we see who's close to 75 points?\n\nTrainer: Yes! I'll create a dashboard showing leads at 60-74 points. You can reach out proactively.\n\nSales Rep 1: This is game-changing. What else should we automate?\n\nTrainer: Let me show you 5 more workflows: abandoned cart recovery, meeting no-show follow-up, deal stage automation, customer onboarding, and renewal reminders.\n\n[90 minutes later...]\n\nTeam Lead: This is incredible. We've built 8 workflows that will save us massive time.\n\nTrainer: You're all set! Use these templates and you'll see results within a week. I'll check in next month to see your progress."
+    },
+    {
+      "id": "hs-whatsapp-1",
+      "title": "Quick Lead Response - Mobile App Demo",
+      "date": "2025-11-08T15:30:00Z",
+      "duration": "WhatsApp Chat",
+      "participants": [
+        "Samuel Brown",
+        "Sales Rep",
+        "Prospect"
+      ],
+      "type": "lead_response",
+      "dataSource": "hs-whatsapp",
+      "status": "completed",
+      "summary": "Fast response to demo request via WhatsApp",
+      "content": "Prospect: Hi! I just filled out the demo form on your website. When can we schedule?\n\nSales Rep: Hi! Thanks for your interest! I can schedule you as soon as tomorrow. What time works for you?\n\nProspect: Tomorrow at 2 PM?\n\nSales Rep: Perfect! I've sent you a calendar invite. What features are you most interested in?\n\nProspect: Mainly email automation and lead scoring.\n\nSales Rep: Great! Those are our most popular features. I'll customize the demo to focus on those. See you tomorrow! 👍\n\nProspect: Looking forward to it!"
+    },
+    {
+      "id": "hs-whatsapp-2",
+      "title": "Customer Support - Quick Fix",
+      "date": "2025-11-08T12:00:00Z",
+      "duration": "WhatsApp Chat",
+      "participants": [
+        "Samuel Brown",
+        "Support Agent",
+        "Customer"
+      ],
+      "type": "support_chat",
+      "dataSource": "hs-whatsapp",
+      "status": "resolved",
+      "summary": "Resolved login issue via WhatsApp support",
+      "content": "Customer: I can't log into my account. Getting error message.\n\nSupport: Sorry to hear that! Can you send me a screenshot of the error?\n\nCustomer: [Screenshot sent]\n\nSupport: I see the issue - password reset needed. I'll send you a reset link right now.\n\nCustomer: Got it! Just reset my password and I'm in now. Thanks!\n\nSupport: Excellent! Anything else I can help with?\n\nCustomer: No, that's all. Thanks for the quick response! 🙌\n\nSupport: Happy to help! Feel free to reach out anytime."
+    },
+    {
+      "id": "hs-whatsapp-3",
+      "title": "Contract Negotiation Follow-up",
+      "date": "2025-11-08T16:45:00Z",
+      "duration": "WhatsApp Chat",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager",
+        "Client"
+      ],
+      "type": "negotiation",
+      "dataSource": "hs-whatsapp",
+      "status": "completed",
+      "summary": "Quick contract clarification via WhatsApp",
+      "content": "Client: Hi, one question about the contract - can we reduce the commitment from 12 to 6 months?\n\nAccount Manager: Let me check with my manager. Give me 10 minutes.\n\n[10 minutes later]\n\nAccount Manager: Good news! We can do 6 months if you're okay with monthly pricing of $2K instead of $1,800.\n\nClient: That works for us. Send over the updated contract.\n\nAccount Manager: Sending it now via email. You'll have it in 2 minutes.\n\nClient: Perfect! Will review and sign today.\n\nAccount Manager: Awesome! Thanks for your business! 🎉"
+    },
+    {
+      "id": "hs-whatsapp-4",
+      "title": "Feature Request Discussion",
+      "date": "2025-11-08T14:20:00Z",
+      "duration": "WhatsApp Chat",
+      "participants": [
+        "Samuel Brown",
+        "Product Manager",
+        "Customer"
+      ],
+      "type": "feature_request",
+      "dataSource": "hs-whatsapp",
+      "status": "in_progress",
+      "summary": "Customer requesting custom integration feature",
+      "content": "Customer: We need integration with our internal tool. Is that possible?\n\nProduct Manager: Definitely! What tool are you using?\n\nCustomer: It's a custom-built project management system.\n\nProduct Manager: We can build that. Do you have API documentation?\n\nCustomer: Yes, I'll email it to you.\n\nProduct Manager: Perfect! Our engineering team will review and get back to you within 48 hours with timeline and cost.\n\nCustomer: How long typically for custom integrations?\n\nProduct Manager: Usually 2-4 weeks depending on complexity. I'll prioritize yours.\n\nCustomer: Great! Waiting for your team's response.\n\nProduct Manager: You'll hear from us by Thursday. Thanks for being a great customer!"
+    },
+    {
+      "id": "hs-whatsapp-5",
+      "title": "Onboarding Check-in",
+      "date": "2025-11-08T10:30:00Z",
+      "duration": "WhatsApp Chat",
+      "participants": [
+        "Samuel Brown",
+        "Customer Success",
+        "New Customer"
+      ],
+      "type": "onboarding_checkin",
+      "dataSource": "hs-whatsapp",
+      "status": "completed",
+      "summary": "Quick onboarding progress check",
+      "content": "CS: Hi! Just checking in - how's your first week with HubSpot going?\n\nCustomer: Going well! Still learning but excited about the possibilities.\n\nCS: Awesome! Have you completed the setup checklist?\n\nCustomer: About 70% done. Stuck on the email integration part.\n\nCS: I can help with that! Want to hop on a quick 15-min call?\n\nCustomer: That would be great! When?\n\nCS: How about in 30 minutes?\n\nCustomer: Perfect! Send me the link.\n\nCS: Link sent! See you in 30. 📞\n\nCustomer: Thanks! You guys have been super helpful! 👍"
+    }
+  ],
+  "recentActivity": [
+    {
+      "action": "Campaign Performance Report - Q1",
+      "detail": "Q1 email campaign results and recommendations",
+      "timestamp": "2025-11-08T09:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-email-1",
+      "dataSource": "hs-emails",
+      "type": "campaign_report"
+    },
+    {
+      "action": "Account Renewal Reminder",
+      "detail": "Annual renewal approaching with upgrade options",
+      "timestamp": "2025-11-08T10:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-email-2",
+      "dataSource": "hs-emails",
+      "type": "renewal_notice"
+    },
+    {
+      "action": "New Feature Announcement - AI Tools",
+      "detail": "Announcing new AI-powered features for all users",
+      "timestamp": "2025-11-08T08:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-email-3",
+      "dataSource": "hs-emails",
+      "type": "product_update"
+    },
+    {
+      "action": "Discovery Call - Enterprise Deal",
+      "detail": "Initial discovery call discussing needs and budget",
+      "timestamp": "2025-11-08T10:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-call-1",
+      "dataSource": "hs-calls",
+      "type": "sales_call"
+    },
+    {
+      "action": "Customer Success Check-in",
+      "detail": "Quarterly check-in on platform usage and satisfaction",
+      "timestamp": "2025-11-08T14:30:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-call-2",
+      "dataSource": "hs-calls",
+      "type": "support_call"
+    },
+    {
+      "action": "Upsell Discussion - Marketing Hub",
+      "detail": "Discussing Marketing Hub upgrade for campaign automation",
+      "timestamp": "2025-11-08T11:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-call-3",
+      "dataSource": "hs-calls",
+      "type": "sales_call"
+    },
+    {
+      "action": "Technical Support - Integration Issue",
+      "detail": "Troubleshooting API integration with custom CRM",
+      "timestamp": "2025-11-08T16:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-call-4",
+      "dataSource": "hs-calls",
+      "type": "support_call"
+    },
+    {
+      "action": "Strategy Planning Session - Q2 Goals",
+      "detail": "Quarterly business review and Q2 goal setting",
+      "timestamp": "2025-11-08T13:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-meeting-1",
+      "dataSource": "hs-meetings",
+      "type": "strategy_meeting"
+    },
+    {
+      "action": "Training Workshop - Advanced Automation",
+      "detail": "Team training on workflow automation and lead nurturing",
+      "timestamp": "2025-11-08T10:00:00Z",
+      "connector": "HubSpot",
+      "transcriptId": "hs-meeting-2",
+      "dataSource": "hs-meetings",
+      "type": "training_workshop"
+    },
+    {
+      "action": "HubSpot connected successfully",
+      "detail": "5 contacts synced",
+      "timestamp": "2025-11-09T04:29:12.399892Z"
+    }
+  ]
+}

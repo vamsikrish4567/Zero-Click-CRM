@@ -1,0 +1,306 @@
+{
+  "id": "zendesk",
+  "name": "Zendesk Sell",
+  "connected": false,
+  "dataSources": [
+    {
+      "id": "zendesk-calls",
+      "name": "Support Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "zendesk-emails",
+      "name": "Support Tickets",
+      "type": "email",
+      "icon": "mail",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "zendesk-chat",
+      "name": "Live Chat Logs",
+      "type": "message",
+      "icon": "message",
+      "connected": false,
+      "count": 2
+    },
+    {
+      "id": "zendesk-meetings",
+      "name": "Customer Calls",
+      "type": "transcript",
+      "icon": "video",
+      "connected": false,
+      "count": 1
+    }
+  ],
+  "stats": {
+    "contacts": 7,
+    "deals": 7,
+    "companies": 7,
+    "transcripts": 50,
+    "lastSync": null
+  },
+  "contacts": [
+    {
+      "id": "zendesk-1",
+      "name": "Thomas Wilson",
+      "email": "thomas@customersupport.com",
+      "phone": "(555) 701-8001",
+      "company": "Customer Support Pro",
+      "title": "Support Manager",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T08:30:00Z",
+      "notes": "500 tickets/day, 6-8hr response (SLA 4hr). Outdated system. Demo completed. Enterprise plan 25 agents @ $115/user = $2,875/month. 2-week pilot starting with 5 agents."
+    },
+    {
+      "id": "zendesk-2",
+      "name": "Emily Parker",
+      "email": "emily@servicehub.com",
+      "phone": "(555) 701-8002",
+      "company": "Service Hub Inc",
+      "title": "Head of Customer Success",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T13:00:00Z",
+      "notes": "Renewal: Professional 15 agents upgraded to Enterprise 20 agents. Response time: 8hr→2hr, CSAT: 72%→89%, resolution +40% faster. $2,295/month with 15% loyalty discount (2-year lock)."
+    },
+    {
+      "id": "zendesk-3",
+      "name": "Jason Martinez",
+      "email": "jason@helpdesksolutions.com",
+      "phone": "(555) 701-8003",
+      "company": "Helpdesk Solutions",
+      "title": "CX Director",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T10:30:00Z",
+      "notes": "Salesforce integration: bi-directional sync, contact auto-creation, deal stage updates. Enterprise customer. Setup call Thursday with Salesforce admin. Sandbox testing before production."
+    },
+    {
+      "id": "zendesk-4",
+      "name": "Victoria Brown",
+      "email": "victoria@ticketsystem.com",
+      "phone": "(555) 701-8004",
+      "company": "Ticket System Co",
+      "title": "VP Customer Experience",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T14:00:00Z",
+      "notes": "Multi-language support (6 countries). Beta tester for auto language detection, smart routing, multi-language help center, translated macros. Enterprise customer. Beta starts April 1st."
+    },
+    {
+      "id": "zendesk-5",
+      "name": "Gregory Taylor",
+      "email": "gregory@clientcare.com",
+      "phone": "(555) 701-8005",
+      "company": "Client Care Partners",
+      "title": "Director of Support",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T11:00:00Z",
+      "notes": "30 agents, 800 tickets/day. Slow dashboards (50 custom views). View optimization audit scheduled tomorrow. Auto-archive enabled for 90+ day old tickets. Expecting 5-10x speed improvement."
+    },
+    {
+      "id": "zendesk-6",
+      "name": "Natalie Garcia",
+      "email": "natalie@serviceexcellence.com",
+      "phone": "(555) 701-8006",
+      "company": "Service Excellence Ltd",
+      "title": "Customer Success Lead",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T09:00:00Z",
+      "notes": "Professional 12 agents @ $80/user ($960/month). Upgrading to Enterprise @ $125/user ($1,500/month). Needs sentiment analysis, custom dashboards, SLA tracking. 30-day Enterprise trial active."
+    },
+    {
+      "id": "zendesk-7",
+      "name": "Derek Johnson",
+      "email": "derek@supportteam.com",
+      "phone": "(555) 701-8007",
+      "company": "Support Team Global",
+      "title": "Operations Manager",
+      "status": "Active",
+      "source": "Zendesk",
+      "created_at": "2025-11-10T15:30:00Z",
+      "notes": "40 agents, 3 teams (Tech Support, Customer Success, Billing). Migrating from 8-year-old system. 6-week implementation. Salesforce integration. Macro import. Data migration over weekend. Training in Week 3."
+    }
+  ],
+  "deals": [
+    {
+      "id": "zendesk-deal-1",
+      "title": "Customer Support Pro - Enterprise Pilot",
+      "value": 34500,
+      "stage": "pilot",
+      "contact": "Thomas Wilson",
+      "company": "Customer Support Pro",
+      "closeDate": "2025-11-24",
+      "notes": "25 agents @ $115/user = $2,875/month ($34,500 annually). 2-week pilot with 5 agents. AI routing, unified inbox, knowledge base integration. Implementation 4-6 weeks, phased rollout."
+    },
+    {
+      "id": "zendesk-deal-2",
+      "title": "Service Hub - Enterprise Renewal + Expansion",
+      "value": 27540,
+      "stage": "closed_won",
+      "contact": "Emily Parker",
+      "company": "Service Hub Inc",
+      "closeDate": "2025-11-10",
+      "notes": "Upgraded from Professional 15 agents to Enterprise 20 agents. $2,295/month with 15% loyalty discount (2-year lock). Response time improved 8hr→2hr, CSAT 72%→89%."
+    },
+    {
+      "id": "zendesk-deal-3",
+      "title": "Helpdesk Solutions - Salesforce Integration",
+      "value": 95000,
+      "stage": "implementation",
+      "contact": "Jason Martinez",
+      "company": "Helpdesk Solutions",
+      "closeDate": "2025-11-14",
+      "notes": "Enterprise customer. Bi-directional Salesforce sync, contact auto-creation, deal stage automation. Setup call Thursday with Salesforce admin. Sandbox testing before production."
+    },
+    {
+      "id": "zendesk-deal-4",
+      "title": "Ticket System Co - Multi-Language Beta",
+      "value": 67000,
+      "stage": "beta_testing",
+      "contact": "Victoria Brown",
+      "company": "Ticket System Co",
+      "closeDate": "2025-12-15",
+      "notes": "Enterprise customer in 6 countries. Beta tester for auto language detection, smart routing, multi-language help center, translated macros. Beta starts April 1st. No additional cost (included in Enterprise)."
+    },
+    {
+      "id": "zendesk-deal-5",
+      "title": "Service Excellence Ltd - Enterprise Trial",
+      "value": 18000,
+      "stage": "trial",
+      "contact": "Natalie Garcia",
+      "company": "Service Excellence Ltd",
+      "closeDate": "2025-12-10",
+      "notes": "12 agents upgrading from Professional ($960/month) to Enterprise ($1,500/month). 30-day trial active. Needs sentiment analysis, custom dashboards, SLA tracking. ROI: 2 retained customers pays for upgrade."
+    },
+    {
+      "id": "zendesk-deal-6",
+      "title": "Client Care Partners - Performance Optimization",
+      "value": 48000,
+      "stage": "implementation",
+      "contact": "Gregory Taylor",
+      "company": "Client Care Partners",
+      "closeDate": "2025-11-11",
+      "notes": "30 agents, 800 tickets/day. Slow dashboards (50 custom views). View optimization audit tomorrow. Auto-archive enabled for 90+ day tickets. Expecting 5-10x speed improvement."
+    },
+    {
+      "id": "zendesk-deal-7",
+      "title": "Support Team Global - Full Migration",
+      "value": 138000,
+      "stage": "implementation",
+      "contact": "Derek Johnson",
+      "company": "Support Team Global",
+      "closeDate": "2025-12-20",
+      "notes": "40 agents, 3 teams. 6-week implementation from 8-year-old system. Salesforce integration, macro import, full data migration. Training Week 3, parallel running Week 4, cutover Week 5."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "zendesk-call-1",
+      "title": "Enterprise Demo - Customer Support Pro",
+      "date": "2025-11-10T08:30:00Z",
+      "duration": "42 min",
+      "participants": [
+        "Samuel Brown",
+        "Account Executive",
+        "Thomas Wilson"
+      ],
+      "type": "call",
+      "dataSource": "zendesk-calls",
+      "content": "Account Executive: Thomas, thanks for your interest in Zendesk. Tell me about your current support setup.\n\nThomas: We're handling about 500 tickets daily across email, phone, and chat. Using an outdated ticketing system that can't keep up.\n\nAccount Executive: 500 tickets is significant volume. What are your biggest pain points?\n\nThomas: Response times. Our SLA is 4 hours, but we're averaging 6-8 hours. Customers are unhappy.\n\nAccount Executive: Let me show you how Zendesk can help. First, our AI-powered routing ensures tickets go to the right agent immediately.\n\nThomas: We've tried routing before. It doesn't always work well.\n\nAccount Executive: Ours learns from your data. After 2 weeks, accuracy is typically 95%+. Wrong department tickets drop dramatically.\n\nThomas: That would help. But what about agent productivity?\n\nAccount Executive: Multiple features here. Macros for common responses, knowledge base integration for suggested articles, and automated workflows.\n\nThomas: Macros we have. Knowledge base integration sounds interesting.\n\nAccount Executive: When an agent opens a ticket, AI suggests relevant KB articles. Agents can send them to customers or use them to craft responses. Cuts response time in half.\n\nThomas: Half? That's significant. What about live chat?\n\nAccount Executive: Integrated seamlessly. Chat conversations can escalate to tickets if needed. Agents handle email and chat from one interface.\n\nThomas: We currently have separate systems for email and chat. It's inefficient.\n\nAccount Executive: Exactly why unified inbox is so valuable. One view for all channels - email, chat, phone, social media.\n\nThomas: Social media support too?\n\nAccount Executive: Yes. Monitor Twitter, Facebook, Instagram mentions. Respond directly from Zendesk. Everything tracked and measured.\n\nThomas: That's comprehensive. What about reporting?\n\nAccount Executive: Real-time dashboards, custom reports, agent performance metrics, customer satisfaction tracking, SLA compliance monitoring.\n\nThomas: Can we see individual agent performance?\n\nAccount Executive: Absolutely. First response time, resolution time, customer satisfaction scores, ticket volume - all tracked per agent.\n\nThomas: We need that for performance reviews. What's the pricing for 25 agents?\n\nAccount Executive: Enterprise plan is $115 per agent per month for your volume. That's $2,875 monthly, billed annually.\n\nThomas: That's higher than our current system.\n\nAccount Executive: True, but consider the ROI. Faster response times mean happier customers, fewer escalations, higher retention. Most customers see 30% improvement in CSAT within 3 months.\n\nThomas: 30% CSAT improvement would justify the cost. What about implementation?\n\nAccount Executive: We provide dedicated implementation specialist, data migration assistance, team training, and 30-day support during transition.\n\nThomas: How long does implementation take?\n\nAccount Executive: For your size, 4-6 weeks. We can go live in phases - start with email tickets, add chat, then phone integration.\n\nThomas: Phased approach makes sense. Can we do a pilot with 5 agents first?\n\nAccount Executive: Great idea. Two-week pilot, same features, no commitment. I'll set it up this week.\n\nThomas: Perfect. Let's do it."
+    },
+    {
+      "id": "zendesk-call-2",
+      "title": "Renewal Discussion - Service Hub",
+      "date": "2025-11-10T13:00:00Z",
+      "duration": "30 min",
+      "participants": [
+        "Samuel Brown",
+        "Customer Success Manager",
+        "Emily Parker"
+      ],
+      "type": "call",
+      "dataSource": "zendesk-calls",
+      "content": "Customer Success Manager: Emily, your annual renewal is coming up. Let's review your experience with Zendesk this year.\n\nEmily: Overall excellent! We've seen dramatic improvements in our support metrics.\n\nCustomer Success Manager: That's wonderful. Tell me about the improvements.\n\nEmily: First response time dropped from 8 hours to 2 hours. CSAT score went from 72% to 89%. Ticket resolution 40% faster.\n\nCustomer Success Manager: Those are fantastic results! What features drove those improvements?\n\nEmily: AI-powered routing was huge. Tickets go to the right specialist immediately. No more reassignments.\n\nCustomer Success Manager: And your team is using macros?\n\nEmily: Extensively. We created 50+ macros for common issues. Agents love them.\n\nCustomer Success Manager: Looking at your usage, you're on the Professional plan with 15 agents. Any plans to expand?\n\nEmily: Actually, yes. We're hiring 5 more agents next quarter. We're also interested in upgrading to Enterprise.\n\nCustomer Success Manager: Enterprise would give you advanced AI, custom reporting, and sandbox environment. Why the interest?\n\nEmily: We need more sophisticated reporting for our executive team. They want customer journey analytics.\n\nCustomer Success Manager: Perfect use case for Enterprise. You'd get custom dashboards, trend analysis, and predictive insights.\n\nEmily: What about pricing? We're currently paying $1,800 monthly for 15 agents on Professional.\n\nCustomer Success Manager: Enterprise for 20 agents would be $2,700 monthly. But let me check on a loyalty discount...\n\nEmily: We'd appreciate that. We've been happy customers.\n\nCustomer Success Manager: I can offer 15% off the first year of your renewal. That brings Enterprise to $2,295 for 20 agents.\n\nEmily: That's actually less per agent than we're paying now!\n\nCustomer Success Manager: Exactly. And you get significant feature upgrades. Plus, locked in pricing for 2 years.\n\nEmily: 2-year price lock is attractive. When can we upgrade?\n\nCustomer Success Manager: I can upgrade you next week. We'll migrate your data, update permissions, and train your team on new features.\n\nEmily: Perfect. Send me the renewal contract and let's move forward.\n\nCustomer Success Manager: Will do! I'll also schedule training for the new Enterprise features."
+    },
+    {
+      "id": "zendesk-email-1",
+      "title": "Integration Question - Helpdesk Solutions",
+      "date": "2025-11-10T10:30:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Technical Support",
+        "Jason Martinez"
+      ],
+      "type": "email",
+      "dataSource": "zendesk-emails",
+      "content": "From: Jason Martinez <jason@helpdesksolutions.com>\nTo: Zendesk Technical Support\nSubject: Salesforce Integration Setup\n\nHi Zendesk Team,\n\nWe're trying to integrate Zendesk with our Salesforce CRM. We need:\n\n1. Bi-directional sync between Zendesk tickets and Salesforce cases\n2. Automatic contact creation in Salesforce when new tickets arrive\n3. Ticket status updates to reflect in Salesforce deal stages\n\nCan Zendesk support this level of integration? If so, what's required?\n\nThanks,\nJason\n\n---\n\nFrom: Zendesk Technical Support\nTo: Jason Martinez\n\nJason,\n\nGreat questions! Yes, all three requirements are supported through our Salesforce integration:\n\n**1. Bi-directional Sync**\nTickets created in Zendesk automatically create Cases in Salesforce, and vice versa. Status, priority, and notes sync in real-time.\n\n**2. Contact Creation**\nWhen a ticket arrives from a new email address, we can automatically create a Contact in Salesforce with available information.\n\n**3. Deal Stage Updates**\nYou can configure triggers: when ticket status changes to \"Solved\", update related Opportunity stage in Salesforce.\n\n**Setup Requirements:**\n- Zendesk Professional or Enterprise plan (you're on Enterprise \u2713)\n- Salesforce admin credentials for authentication\n- Field mapping configuration (we'll help with this)\n- Custom trigger creation (15-20 minutes)\n\n**Next Steps:**\n1. I'll send you our Salesforce Integration Guide\n2. Schedule a setup call with our integration specialist\n3. Test in sandbox environment before production\n\nWhen would you like to schedule the setup call?\n\nBest,\nZendesk Technical Support\n\n---\n\nFrom: Jason Martinez\nTo: Zendesk Technical Support\n\nPerfect! This is exactly what we need.\n\nLet's schedule for Thursday afternoon. I'll have our Salesforce admin join the call.\n\nPlease send the Integration Guide so we can review beforehand.\n\nThanks!\nJason"
+    },
+    {
+      "id": "zendesk-email-2",
+      "title": "Feature Feedback - Ticket System Co",
+      "date": "2025-11-10T14:00:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Product Manager",
+        "Victoria Brown"
+      ],
+      "type": "email",
+      "dataSource": "zendesk-emails",
+      "content": "From: Victoria Brown <victoria@ticketsystem.com>\nTo: Zendesk Product Manager\nSubject: Feature Request - Multi-language Support\n\nHi Zendesk Product Team,\n\nWe operate in 6 countries and support customers in English, Spanish, French, German, Portuguese, and Japanese.\n\nCurrent challenges:\n1. No automatic ticket language detection\n2. Manual routing to language-specific agents\n3. Help center content requires separate instances per language\n\nCan you add:\n- Automatic language detection\n- Auto-routing based on language\n- Multi-language help center in single instance\n- Agent reply templates in multiple languages\n\nThis would dramatically improve our international support.\n\nThanks,\nVictoria\n\n---\n\nFrom: Zendesk Product Manager\nTo: Victoria Brown\n\nVictoria,\n\nExcellent timing! We're releasing multi-language enhancements next month:\n\n\u2705 **Auto Language Detection** - AI detects customer language from first message\n\u2705 **Smart Routing** - Tickets auto-route to agents with matching language skills\n\u2705 **Multi-language Help Center** - All languages in one instance, customers see their language automatically\n\u2705 **Translated Macros** - Create macro templates, AI suggests translations\n\n**Additional Features:**\n- Real-time translation for agents (optional)\n- Language-specific CSAT surveys\n- Multi-language reporting\n\n**Pricing:**\nIncluded in Enterprise plan (you're already on Enterprise, so no additional cost!)\n\n**Beta Access:**\nWe're looking for beta testers. Interested? You'd get early access (2 weeks before general release) and direct line to product team for feedback.\n\nLet me know!\n\nBest,\nZendesk Product Manager\n\n---\n\nFrom: Victoria Brown\nTo: Zendesk Product Manager\n\nAbsolutely interested in beta testing! This addresses all our pain points.\n\nWhen does beta start? I'll coordinate with our international support teams.\n\nVictoria\n\n---\n\nFrom: Zendesk Product Manager\nTo: Victoria Brown\n\nBeta starts April 1st. I'll send you:\n- Beta access invitation\n- Feature documentation\n- Setup guide\n- Direct Slack channel with product team\n\nYour feedback will shape the final release!\n\nThanks for being a great partner,\nZendesk Product Manager"
+    },
+    {
+      "id": "zendesk-chat-1",
+      "title": "Live Chat - Client Care Partners",
+      "date": "2025-11-10T11:00:00Z",
+      "duration": "12 min",
+      "participants": [
+        "Samuel Brown",
+        "Support Agent",
+        "Gregory Taylor"
+      ],
+      "type": "chat",
+      "dataSource": "zendesk-chat",
+      "content": "Support Agent: Hi Gregory! How can I help you today?\n\nGregory: Hi! We're experiencing slow dashboard load times. Is there an issue?\n\nSupport Agent: Let me check our status page... No reported incidents. Can you tell me more about the slowness?\n\nGregory: Dashboards taking 15-20 seconds to load. Usually instant.\n\nSupport Agent: Gotcha. How many agents do you have? And what's your ticket volume?\n\nGregory: 30 agents, about 800 tickets daily.\n\nSupport Agent: That's high volume! You might be hitting query limits. Are you using custom views?\n\nGregory: Yes, we have about 50 custom views across the team.\n\nSupport Agent: That's likely the issue. Each custom view queries your full ticket database. With 800 daily tickets, that's heavy.\n\nGregory: Oh! How do we fix that?\n\nSupport Agent: Two options:\n1. Optimize views - use filters instead of searching all tickets\n2. Archive old tickets - move closed tickets older than 90 days to archive\n\nGregory: Can you help us optimize views?\n\nSupport Agent: Absolutely! I can audit your views and recommend optimizations. Would take about 2 hours.\n\nGregory: Please do! When can you start?\n\nSupport Agent: I'll schedule it for tomorrow morning. I'll email you a meeting invite and audit results after.\n\nGregory: Perfect! Anything we can do immediately?\n\nSupport Agent: Yes! Go to Settings > Data Management > Archive. Set auto-archive for tickets closed >90 days. That'll speed things up today.\n\nGregory: Doing that now... Done! Already feels faster!\n\nSupport Agent: Great! And I'll help optimize those views tomorrow. You should see 5-10x speed improvement.\n\nGregory: Excellent. Thanks for the quick help!\n\nSupport Agent: You're welcome! Watch for my email with the meeting invite.\n\nGregory: Will do. Have a great day!\n\nSupport Agent: You too!"
+    },
+    {
+      "id": "zendesk-chat-2",
+      "title": "Live Chat - Service Excellence Ltd",
+      "date": "2025-11-10T09:00:00Z",
+      "duration": "18 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Support",
+        "Natalie Garcia"
+      ],
+      "type": "chat",
+      "dataSource": "zendesk-chat",
+      "content": "Sales Support: Hello Natalie! I see you're interested in upgrading to Enterprise. How can I help?\n\nNatalie: Yes! We need advanced reporting and AI features. What's included?\n\nSales Support: Enterprise includes:\n- Advanced AI (sentiment analysis, intent detection)\n- Custom dashboards with 50+ metrics\n- Sandbox environment for testing\n- SLA tracking with escalations\n- Role-based permissions\n- API rate limit increases\n\nNatalie: Sentiment analysis sounds interesting. How does that work?\n\nSales Support: AI analyzes ticket tone automatically. Flags negative sentiment for manager review. Helps catch at-risk customers early.\n\nNatalie: That's valuable. We've lost customers because we didn't catch escalating frustration.\n\nSales Support: Exactly what it prevents! You'll see alerts: \"Customer sentiment negative\" with suggested responses.\n\nNatalie: What about the custom dashboards?\n\nSales Support: Build any dashboard you want. Examples: Executive overview, Team performance, Customer satisfaction trends, SLA compliance.\n\nNatalie: Can we share dashboards with non-Zendesk users?\n\nSales Support: Yes! Generate shareable links for executives or export as PDF for meetings.\n\nNatalie: Perfect for board presentations. What's pricing?\n\nSales Support: You're currently on Professional at $80/agent for 12 agents = $960/month. Enterprise is $125/agent = $1,500/month.\n\nNatalie: $540 more monthly. What's the ROI?\n\nSales Support: Most customers see:\n- 25% reduction in escalations (sentiment detection catches issues early)\n- 15% improvement in agent productivity (better insights)\n- 30% higher customer retention (proactive support)\n\nNatalie: If we retain even 2 customers yearly, that pays for the upgrade.\n\nSales Support: Exactly! Plus you future-proof as you grow. Enterprise scales better.\n\nNatalie: Makes sense. Can we trial Enterprise features before committing?\n\nSales Support: Yes! 30-day Enterprise trial, full features, no credit card. Your data stays if you upgrade.\n\nNatalie: Let's start the trial. How do we begin?\n\nSales Support: I'll enable Enterprise features on your account in the next hour. You'll receive an email with feature guide and training videos.\n\nNatalie: Excellent! I'll test with my team and decide before trial ends.\n\nSales Support: Perfect! I'll check in after 2 weeks to answer questions. Sound good?\n\nNatalie: Yes, thank you!\n\nSales Support: You're welcome! Enjoy exploring Enterprise features!"
+    },
+    {
+      "id": "zendesk-meeting-1",
+      "title": "Implementation Kickoff - Support Team Global",
+      "date": "2025-11-10T15:30:00Z",
+      "duration": "55 min",
+      "participants": [
+        "Samuel Brown",
+        "Implementation Specialist",
+        "Derek Johnson",
+        "Support Team Leads"
+      ],
+      "type": "meeting",
+      "dataSource": "zendesk-meetings",
+      "content": "Implementation Specialist: Derek, welcome to your Zendesk implementation kickoff! Let's discuss your goals and timeline.\n\nDerek: Thanks! We're excited but also nervous. We've used our current system for 8 years.\n\nImplementation Specialist: Change is always challenging, but we'll make it smooth. Tell me about your current setup.\n\nDerek: 40 agents across 3 teams: Technical Support, Customer Success, Billing. Each team has different workflows.\n\nImplementation Specialist: Perfect. We'll create separate views and automations for each team. How do tickets arrive?\n\nTeam Lead 1: Email primarily, some phone calls, and recently added live chat.\n\nImplementation Specialist: We'll integrate all three. Everything flows into one queue, then routes automatically by team.\n\nDerek: How does routing work?\n\nImplementation Specialist: Based on rules you define. Examples: \"billing\" keyword \u2192 Billing team. Email from VIP customer \u2192 Customer Success.\n\nTeam Lead 2: Can we route based on customer tier?\n\nImplementation Specialist: Absolutely! We'll sync customer data from your CRM. Enterprise customers can auto-route to senior agents.\n\nDerek: We use Salesforce. Does that integrate?\n\nImplementation Specialist: Yes. We'll pull customer tier, contract value, and account owner. All visible in ticket sidebar.\n\nTeam Lead 3: What about macros? We have hundreds of templates.\n\nImplementation Specialist: We can import them! Send me your template file, I'll convert to Zendesk macros.\n\nDerek: That'll save weeks of work. What's our timeline?\n\nImplementation Specialist: 6-week implementation:\n- Week 1-2: Data migration and configuration\n- Week 3: Agent training (3 sessions)\n- Week 4: Parallel running (old + new system)\n- Week 5: Full cutover\n- Week 6: Support and optimization\n\nTeam Lead 1: Parallel running is smart. Gives us time to adjust.\n\nImplementation Specialist: Exactly. You'll feel comfortable before we shut off the old system.\n\nDerek: What happens to our historical tickets?\n\nImplementation Specialist: We migrate everything. Tickets, customers, attachments, comments - full history preserved.\n\nTeam Lead 2: How long does migration take?\n\nImplementation Specialist: For your volume, about 48 hours. We do it over a weekend to avoid disruption.\n\nDerek: Smart. What about training?\n\nImplementation Specialist: Three training sessions:\n1. Agents - ticket handling, macros, workflows (2 hours)\n2. Team Leads - reporting, management, escalations (2 hours)\n3. Admins - configuration, customization, integrations (3 hours)\n\nTeam Lead 3: Will you record the trainings?\n\nImplementation Specialist: Yes! Plus we provide video library and documentation. New agents can self-train.\n\nDerek: Excellent. What do you need from us to get started?\n\nImplementation Specialist: Three things:\n1. Salesforce admin credentials for integration\n2. Export of current ticket data\n3. List of your top 20 support scenarios for macro creation\n\nTeam Lead 1: We can have that by Friday.\n\nImplementation Specialist: Perfect! I'll start configuration next week. You'll see your Zendesk instance by end of next week.\n\nDerek: This sounds manageable. We're in good hands.\n\nImplementation Specialist: You absolutely are! I'll be with you through the entire process. Any questions?\n\nTeam Lead 2: What if we run into issues during parallel running?\n\nImplementation Specialist: I'll be available via Slack channel - response within 1 hour. Plus we have daily check-in calls that week.\n\nDerek: That's reassuring. Let's do this! I'm excited now.\n\nImplementation Specialist: Great! I'll send calendar invites for all our milestones. Talk to you next week!"
+    }
+  ],
+  "recentActivity": []
+}

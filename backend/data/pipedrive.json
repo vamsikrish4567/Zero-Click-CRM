@@ -1,0 +1,322 @@
+{
+  "id": "pipedrive",
+  "name": "Pipedrive",
+  "connected": true,
+  "dataSources": [
+    {
+      "id": "pd-calls",
+      "name": "Sales Calls",
+      "type": "voice",
+      "icon": "phone",
+      "connected": false,
+      "count": 3
+    },
+    {
+      "id": "pd-emails",
+      "name": "Email Campaigns",
+      "type": "email",
+      "icon": "mail",
+      "connected": true,
+      "count": 4
+    },
+    {
+      "id": "pd-meetings",
+      "name": "Client Meetings",
+      "type": "transcript",
+      "icon": "video",
+      "connected": false,
+      "count": 2
+    }
+  ],
+  "stats": {
+    "contacts": 5,
+    "deals": 3,
+    "companies": 5,
+    "lastSync": "2025-11-09T05:37:35.282846Z"
+  },
+  "contacts": [
+    {
+      "id": "pipedrive-1",
+      "name": "Robert Chen",
+      "email": "robert.chen@globaltechindustries.com",
+      "phone": "(555) 345-6789",
+      "company": "GlobalTech Industries",
+      "title": "CFO",
+      "status": "Active",
+      "source": "Pipedrive",
+      "created_at": "2025-11-07T15:30:00Z",
+      "notes": "$500K enterprise deal negotiation. Quarterly payments ($125K/quarter), 90-day implementation SLA, 99.9% uptime guarantee. 1000 users, scaling to more. 85GB data migration, 20hrs integration (Salesforce, Slack, Jira, ERP)."
+    },
+    {
+      "id": "pipedrive-2",
+      "name": "Amanda Mitchell",
+      "email": "amanda@retailcorp.com",
+      "phone": "(555) 456-7890",
+      "company": "RetailCorp",
+      "title": "VP Operations",
+      "status": "Active",
+      "source": "Pipedrive",
+      "created_at": "2025-11-07T10:00:00Z",
+      "notes": "Q4 revenue: $2.8M (33% growth). Sales cycle: 45→32 days, win rate: 22%→31%, deal size +18%. Expanding to 15 more users ($52/user with promo). Upgrading to Enterprise ($95/user for 35 users = $125K annually). NetSuite integration needed."
+    },
+    {
+      "id": "pipedrive-3",
+      "name": "David Kim",
+      "email": "david@techstart.io",
+      "phone": "(555) 567-8901",
+      "company": "TechStart Inc",
+      "title": "Founder",
+      "status": "Trial",
+      "source": "Pipedrive",
+      "created_at": "2025-11-07T09:30:00Z",
+      "notes": "6-month-old SaaS startup, 3 sales reps. 200 leads/month, 7.5% close rate (15 deals/month). Lost 5 hot prospects ($17.5K). $49/user/month = $147/month. 14-day trial starting. Target: 12-15% close rate."
+    },
+    {
+      "id": "pipedrive-4",
+      "name": "Sarah Johnson",
+      "email": "sarah@manufacturingco.com",
+      "phone": "(555) 678-9012",
+      "company": "Manufacturing Co",
+      "title": "Client Manager",
+      "status": "Active",
+      "source": "Pipedrive",
+      "created_at": "2025-11-07T14:00:00Z",
+      "notes": "Fully onboarded team, 247 activities logged last month. Mobile app used by field reps. Email integration setup completed. Team adoption excellent."
+    },
+    {
+      "id": "pipedrive-5",
+      "name": "Jennifer Brown",
+      "email": "jennifer@salesteam.com",
+      "phone": "(555) 789-0123",
+      "company": "Sales Team Inc",
+      "title": "VP Sales",
+      "status": "Active",
+      "source": "Pipedrive",
+      "created_at": "2025-11-07T11:00:00Z",
+      "notes": "12 users on Professional ($49/user). Upgrading to Enterprise ($99/user = $600 more/month). Needs custom reporting for board metrics. 30-day Enterprise trial active. Dedicated CSM: Rachel (8yrs experience)."
+    }
+  ],
+  "deals": [
+    {
+      "id": "pipedrive-deal-1",
+      "title": "GlobalTech Industries - Enterprise Agreement",
+      "value": 500000,
+      "stage": "contract_negotiation",
+      "contact": "Robert Chen",
+      "company": "GlobalTech Industries",
+      "closeDate": "2025-11-14",
+      "notes": "$500K deal. Quarterly payments ($125K/quarter) or annual with 5% discount. 90-day implementation, 99.9% uptime SLA. 1000 users @ $45/user for additional. 60-day termination clause. Contract signing this week."
+    },
+    {
+      "id": "pipedrive-deal-2",
+      "title": "RetailCorp - Enterprise Upgrade",
+      "value": 125000,
+      "stage": "closed_won",
+      "contact": "Amanda Mitchell",
+      "company": "RetailCorp",
+      "closeDate": "2025-11-07",
+      "notes": "35 users upgraded to Enterprise ($95/user/month = $125K annually). Added 15 users with 20% promo discount. NetSuite integration ($5K). AI-powered analytics included. Next QBR in June."
+    },
+    {
+      "id": "pipedrive-deal-3",
+      "title": "TechStart Inc - Starter Plan",
+      "value": 1764,
+      "stage": "trial",
+      "contact": "David Kim",
+      "company": "TechStart Inc",
+      "closeDate": "2025-11-21",
+      "notes": "3 users @ $49/user/month = $1,764 annually. 14-day free trial active. Early-stage SaaS startup. Target: improve close rate from 7.5% to 12-15%. Onboarding session scheduled."
+    }
+  ],
+  "transcripts": [
+    {
+      "id": "pd-trans-1",
+      "title": "Contract Negotiation - GlobalTech Industries",
+      "date": "2025-11-07T15:30:00Z",
+      "duration": "40 min",
+      "participants": [
+        "Samuel Brown",
+        "CFO Robert Chen",
+        "Sales Director Maria",
+        "Legal Counsel Tom"
+      ],
+      "type": "contract_negotiation",
+      "dataSource": "pd-meetings",
+      "status": "in_progress",
+      "summary": "Final contract terms negotiation for $500K enterprise deal",
+      "content": "Maria: Thank you Robert for making time. Let's finalize the enterprise agreement.\n\nRobert Chen: We're ready to move forward, but we need to discuss payment terms and implementation timeline.\n\nMaria: Absolutely. Our standard terms are 50% upfront, 50% upon completion. For a $500K deal, that's $250K each.\n\nRobert: We'd prefer quarterly payments over 12 months. Our cash flow planning requires it.\n\nTom: We can accommodate that. Quarterly payments of $125K with a 5% early payment discount if paid annually.\n\nRobert: The discount makes annual payment attractive. What about the implementation SLA?\n\nMaria: We guarantee full implementation within 90 days. If we exceed that, you get 10% credit toward Year 2 renewal.\n\nRobert: That's fair. What about data migration from our current system?\n\nTom: Data migration is included at no additional cost. We'll handle up to 100GB of data and provide 40 hours of migration support.\n\nRobert: We have about 85GB, so that works. What's your uptime guarantee?\n\nMaria: 99.9% uptime SLA. For every hour of downtime beyond that, you receive service credits.\n\nRobert: Excellent. One concern - what happens if we need to scale beyond 1000 users mid-contract?\n\nMaria: Great question. Additional users are $45 per user per month, prorated to your billing cycle. No minimum commitment for add-ons.\n\nRobert: That's flexible. What about integration support?\n\nTom: We include 20 hours of custom integration work. Your key systems are Salesforce, Slack, and Jira, correct?\n\nRobert: Yes, plus our ERP system. Will 20 hours be enough?\n\nMaria: For those four systems, yes. If you need more, additional integration hours are $200 per hour.\n\nRobert: Fair enough. Let's discuss the termination clause.\n\nTom: Either party can terminate with 90 days notice after Year 1. No termination fees, but no refunds for unused time.\n\nRobert: We need a 60-day clause for our procurement policy.\n\nTom: I can approve 60 days for a deal of this size. I'll update the contract.\n\nRobert: Perfect. When can we sign?\n\nMaria: I'll have Tom send the revised contract tomorrow. If you approve, we can start implementation next Monday.\n\nRobert: Excellent. One last item - training for our team?\n\nMaria: Included! 3 days of onsite training for up to 30 users, plus unlimited online training resources.\n\nRobert: This all works for us. Send the contract and we'll get this signed by end of week.\n\nMaria: Fantastic! Welcome to the team, Robert. This partnership is going to be very successful.\n\nNote: This conversation is still in progress and follow-up actions are pending."
+    },
+    {
+      "id": "pd-trans-2",
+      "title": "Quarterly Business Review - RetailCorp",
+      "date": "2025-11-07T10:00:00Z",
+      "duration": "55 min",
+      "participants": [
+        "Samuel Brown",
+        "VP Operations Amanda",
+        "Account Manager Jake",
+        "Success Manager Sophie"
+      ],
+      "type": "business_review",
+      "dataSource": "pd-meetings",
+      "status": "in_progress",
+      "summary": "Q4 2023 performance review and 2024 expansion planning",
+      "content": "Jake: Good morning Amanda! Let's review RetailCorp's Q4 performance.\n\nAmanda: Thanks for preparing this. We've been very happy with the platform.\n\nSophie: The numbers speak for themselves. You're using 87% of available features, well above our average customer.\n\nAmanda: Our team loves it. What metrics have improved?\n\nJake: Sales cycle decreased from 45 to 32 days, deal win rate increased from 22% to 31%, and average deal size grew 18%.\n\nAmanda: Those are impressive improvements. What's driving the win rate increase?\n\nSophie: Your team's adoption of our forecasting tools and automated follow-up sequences. They're catching opportunities earlier.\n\nAmanda: The forecasting has been game-changing. We're hitting targets consistently now.\n\nJake: Your Q4 revenue was $2.8M vs. $2.1M in Q3. That's 33% growth!\n\nAmanda: We're scaling fast. Which brings me to expansion - we need to add 15 more users.\n\nSophie: Perfect timing! We have a promotion right now - 20% off additional seats for existing customers.\n\nAmanda: What's the cost?\n\nJake: Normally $65 per user per month. With the promotion, it's $52 per user. For 15 users, that's $780 monthly vs. $975.\n\nAmanda: Let's do it. We're also opening two new offices. Can the platform support multi-location management?\n\nSophie: Absolutely! We have territory management features that let you segment by office, region, or any custom criteria.\n\nAmanda: Excellent. We need reporting by location.\n\nJake: That's built-in. You'll get separate dashboards and reports for each location while maintaining company-wide visibility.\n\nAmanda: Perfect. What about mobile access? Our field sales team is growing.\n\nSophie: Our mobile app is fully featured. Your team can manage deals, update contacts, and log activities from anywhere.\n\nAmanda: One challenge - we need better integration with our inventory system.\n\nJake: We can build a custom integration. What system are you using?\n\nAmanda: NetSuite. Our sales team needs to check product availability in real-time.\n\nSophie: NetSuite integration is possible. It would take about 2 weeks to develop and cost $5,000.\n\nAmanda: That's worth it. Real-time inventory visibility would eliminate a major pain point.\n\nJake: I'll get our integration team on it. We can have it ready by end of month.\n\nAmanda: Great! Let's also discuss advanced analytics. We want to track customer behavior patterns.\n\nSophie: Our Enterprise plan includes AI-powered analytics. It identifies trends, predicts churn risk, and suggests next-best actions.\n\nAmanda: What's the upgrade cost?\n\nJake: Moving to Enterprise would be $95 per user monthly. For your current 35 users, that's an increase of $30 per user, so $1,050 more per month.\n\nAmanda: Given the ROI we're seeing, that's justified. Let's upgrade all users to Enterprise.\n\nSophie: Excellent decision! I'll process the upgrade today. You'll have access to advanced features immediately.\n\nJake: This expansion brings your annual contract value to $125K. I really appreciate your partnership.\n\nAmanda: You've earned it. The platform has transformed our sales process. Let's schedule our next QBR for June.\n\nSophie: I'll send a calendar invite. Thanks Amanda!\n\nNote: This conversation is still in progress and follow-up actions are pending."
+    },
+    {
+      "id": "pd-call-1",
+      "title": "New Lead Qualification - TechStart Inc",
+      "date": "2025-11-07T09:30:00Z",
+      "duration": "25 min",
+      "participants": [
+        "Samuel Brown",
+        "Sales Rep Jessica",
+        "Founder David"
+      ],
+      "type": "call",
+      "dataSource": "pd-calls",
+      "status": "in_progress",
+      "summary": "Initial qualification call with early-stage startup",
+      "content": "Jessica: Hi David! Thanks for booking a call. Tell me about TechStart and what brought you to Pipedrive?\n\nDavid: We're a 6-month-old SaaS startup with 3 sales reps. We're currently using spreadsheets and it's chaos.\n\nJessica: I hear that a lot from early-stage companies. What's your biggest pain point?\n\nDavid: We're losing track of leads. Last week we realized we forgot to follow up with 5 hot prospects.\n\nJessica: That's expensive! What's your average deal size?\n\nDavid: $3,500 annually. So those 5 missed follow-ups cost us potentially $17,500.\n\nJessica: Exactly. Pipedrive prevents that with automated reminders and clear pipeline visibility. How many leads per month?\n\nDavid: About 200 inbound leads monthly. We're closing maybe 15 deals.\n\nJessica: That's a 7.5% close rate. With better follow-up and pipeline management, you should hit 12-15%.\n\nDavid: That would double our revenue! What's the investment?\n\nJessica: For 3 users, $49 per user monthly. That's $147 per month or $1,764 annually.\n\nDavid: That's very affordable. If it helps us close even 2 more deals per month, it pays for itself 4x over.\n\nJessica: Exactly! Plus you'll save 10+ hours per week on admin work. When do you want to start?\n\nDavid: Can we do a trial first?\n\nJessica: Absolutely! 14-day free trial, no credit card required. I'll send you a setup link and schedule a 30-min onboarding session.\n\nDavid: Perfect. Let's do it!\n\nNote: This conversation is still in progress and follow-up actions are pending."
+    },
+    {
+      "id": "pd-call-2",
+      "title": "Customer Check-in - Manufacturing Co",
+      "date": "2025-11-07T14:00:00Z",
+      "duration": "20 min",
+      "participants": [
+        "Samuel Brown",
+        "Customer Success Rep Tom",
+        "Client Manager Sarah"
+      ],
+      "type": "call",
+      "dataSource": "pd-calls",
+      "status": "completed",
+      "summary": "Monthly check-in to ensure platform satisfaction",
+      "content": "Tom: Hi Sarah! How's everything going with Pipedrive this month?\n\nSarah: Really well! The team is fully onboarded now and we're seeing great adoption.\n\nTom: That's fantastic. I see your team logged 247 activities last month. What's working best?\n\nSarah: The mobile app is a game-changer for our field reps. They can update deals while on-site with customers.\n\nTom: I love hearing that. Are there any features you're not using yet that might help?\n\nSarah: We haven't set up email integration. Is that complicated?\n\nTom: Not at all! Takes 5 minutes. Want me to walk you through it right now?\n\nSarah: Yes please!\n\nTom: I'm sharing my screen. Click Settings, then Email Integration... there you go. Now connect your Gmail.\n\nSarah: Oh, this is easy! What will this do?\n\nTom: Every email with your leads will automatically sync to Pipedrive. Complete communication history in one place.\n\nSarah: That's brilliant. Our reps are constantly asking \"did anyone email this customer?\"\n\nTom: This solves that completely. Anything else you need help with?\n\nSarah: No, this is great. Thanks for the proactive check-in!\n\nTom: My pleasure! I'll follow up next month."
+    },
+    {
+      "id": "pd-call-3",
+      "title": "Upsell Discussion - Enterprise Features",
+      "date": "2025-11-07T11:00:00Z",
+      "duration": "30 min",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager Mike",
+        "VP Sales Jennifer"
+      ],
+      "type": "call",
+      "dataSource": "pd-calls",
+      "status": "completed",
+      "summary": "Discussing upgrade to enterprise plan with advanced features",
+      "content": "Mike: Jennifer, I noticed your team is maxing out the Professional plan features. Let's discuss Enterprise.\n\nJennifer: We've been thinking about it. What do we get?\n\nMike: Advanced reporting, custom fields, team management, API access, and dedicated support. What's most important to you?\n\nJennifer: Custom reporting. Our board needs specific metrics and the standard reports don't quite fit.\n\nMike: Perfect! Enterprise includes a custom report builder. You can create any report you need.\n\nJennifer: Can I see examples?\n\nMike: Sharing my screen now. Here's a report showing deal velocity by sales rep, win/loss analysis by product line, and revenue forecasting.\n\nJennifer: This is exactly what we need! What's the pricing?\n\nMike: Professional is $49 per user, Enterprise is $99. For your 12 users, that's $600 more per month.\n\nJennifer: So $7,200 additional annually. What else do we get for that?\n\nMike: Priority support with 2-hour response time, unlimited custom fields, workflow automation, and a dedicated CSM.\n\nJennifer: The CSM alone is valuable. We've had some complex questions lately.\n\nMike: Your CSM would be Rachel. She has 8 years experience and works with several enterprise clients in your industry.\n\nJennifer: Can we trial Enterprise features first?\n\nMike: I can enable a 30-day Enterprise trial today. If you love it, we'll apply the upgrade retroactively.\n\nJennifer: Perfect! Let's do that."
+    },
+    {
+      "id": "pd-email-1",
+      "title": "Product Update - New Mobile Features",
+      "date": "2025-11-07T08:00:00Z",
+      "duration": "Email",
+      "participants": [
+        "Samuel Brown",
+        "Product Team",
+        "All Users"
+      ],
+      "type": "email",
+      "dataSource": "pd-emails",
+      "status": "completed",
+      "summary": "Announcement of new mobile app capabilities",
+      "content": "Subject: 📱 New Mobile Features - Close Deals Faster On-The-Go!\n\nHi there! We've just launched powerful new mobile features:\n\n🚀 What's New:\n- Offline mode (update deals without internet)\n- Voice notes (record call summaries hands-free)\n- Bulk actions (update multiple deals at once)\n- Smart notifications (AI-powered deal alerts)\n- Calendar sync (see meetings in-app)\n\n📊 Why It Matters:\nOur mobile users close 23% more deals than desktop-only users. These features make mobile even more powerful!\n\n💡 Try It Now:\n1. Update your Pipedrive app\n2. Enable offline mode in Settings\n3. Record your first voice note\n\n🎓 Watch Tutorial: [Link]\n\nQuestions? Reply to this email!\n\nBest,\nThe Pipedrive Team"
+    },
+    {
+      "id": "pd-email-2",
+      "title": "Win Back Campaign - Lapsed Customer",
+      "date": "2025-11-07T10:30:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Account Manager",
+        "Former Customer"
+      ],
+      "type": "email",
+      "dataSource": "pd-emails",
+      "status": "completed",
+      "summary": "Re-engagement campaign with former customer",
+      "content": "From: mike@pipedrive.com\nSubject: We Miss You! Special Win-Back Offer\n\nHi Rachel, I noticed you canceled 3 months ago. We'd love to have you back!\n\n💰 Special Offer: 40% off for 6 months + Free Enterprise upgrade\n\n🎯 What's New Since You Left:\n- AI-powered lead scoring\n- WhatsApp integration\n- Advanced forecasting\n- 99.99% uptime (vs 99.5% before)\n\nWhy did you leave? I'd love to hear feedback.\n\n---\n\nFrom: Rachel <rachel@company.com>\nSubject: RE: We Miss You!\n\nHi Mike, We left because reporting wasn't flexible enough. Has that improved?\n\n---\n\nFrom: mike@pipedrive.com\nSubject: RE: We Miss You!\n\nYes! We now have custom report builder with drag-and-drop. Can I show you a 15-min demo?\n\n---\n\nFrom: Rachel\nSubject: RE: We Miss You!\n\nSure! Tuesday at 2pm works."
+    },
+    {
+      "id": "pd-email-3",
+      "title": "Contract Renewal Reminder",
+      "date": "2025-11-07T09:00:00Z",
+      "duration": "Email",
+      "participants": [
+        "Samuel Brown",
+        "Billing Team",
+        "Customer"
+      ],
+      "type": "email",
+      "dataSource": "pd-emails",
+      "status": "completed",
+      "summary": "Annual subscription renewal notice with special offer",
+      "content": "Subject: Your Pipedrive Subscription Renews in 30 Days\n\nHi James, Your annual subscription renews on April 15th.\n\n📊 This Year You:\n- Closed $1.2M in deals (38% increase!)\n- Managed 2,850 contacts\n- Logged 4,200+ activities\n- Saved 15 hours/week on admin\n\n💰 Renewal Options:\n1. Same Plan: $1,788/year (no change)\n2. Early Renewal: $1,520/year (15% discount)\n3. Upgrade to Professional: $2,388/year (more features)\n\n🎁 Early Renewal Bonus: Free 3-month Enterprise trial\n\nRenew by March 20th for discount!\n\nQuestions? Reply or call us.\n\nBest,\nPipedrive Billing Team"
+    },
+    {
+      "id": "pd-email-4",
+      "title": "Case Study Request - Success Story",
+      "date": "2025-11-07T14:30:00Z",
+      "duration": "Email Thread",
+      "participants": [
+        "Samuel Brown",
+        "Marketing Team",
+        "Happy Customer"
+      ],
+      "type": "email",
+      "dataSource": "pd-emails",
+      "status": "completed",
+      "summary": "Request to feature customer's success story",
+      "content": "From: marketing@pipedrive.com\nSubject: Feature Your Success Story?\n\nHi Amanda, Your results with Pipedrive are incredible:\n- 156% revenue growth\n- 45 to 32-day sales cycle\n- 22% to 31% win rate\n\nWould you be interested in a case study? Benefits:\n✅ Professional write-up for your portfolio\n✅ Featured on our website (great for your brand)\n✅ $500 Amazon gift card\n✅ Early access to new features\n\n30-min interview + review draft before publish.\n\n---\n\nFrom: Amanda <amanda@retailcorp.com>\nSubject: RE: Feature Your Success Story?\n\nInterested! What's the process and timeline?\n\n---\n\nFrom: marketing@pipedrive.com\nSubject: RE: Feature Your Success Story?\n\nGreat! Here's the plan:\n\n1. 30-min video interview (next week)\n2. We write draft (1 week)\n3. You review & approve (2 days)\n4. Publish & promote (ongoing)\n\nInterview questions focus on:\n- Challenge before Pipedrive\n- Why you chose us\n- Results you've seen\n- Advice for others\n\nAvailable Thursday 2pm for interview?"
+    }
+  ],
+  "recentActivity": [
+    {
+      "action": "Product Update - New Mobile Features",
+      "detail": "Announcement of new mobile app capabilities",
+      "timestamp": "2025-11-07T08:00:00Z",
+      "connector": "Pipedrive",
+      "transcriptId": "pd-email-1",
+      "dataSource": "pd-emails",
+      "type": "email"
+    },
+    {
+      "action": "Win Back Campaign - Lapsed Customer",
+      "detail": "Re-engagement campaign with former customer",
+      "timestamp": "2025-11-07T10:30:00Z",
+      "connector": "Pipedrive",
+      "transcriptId": "pd-email-2",
+      "dataSource": "pd-emails",
+      "type": "email"
+    },
+    {
+      "action": "Contract Renewal Reminder",
+      "detail": "Annual subscription renewal notice with special offer",
+      "timestamp": "2025-11-07T09:00:00Z",
+      "connector": "Pipedrive",
+      "transcriptId": "pd-email-3",
+      "dataSource": "pd-emails",
+      "type": "email"
+    },
+    {
+      "action": "Case Study Request - Success Story",
+      "detail": "Request to feature customer's success story",
+      "timestamp": "2025-11-07T14:30:00Z",
+      "connector": "Pipedrive",
+      "transcriptId": "pd-email-4",
+      "dataSource": "pd-emails",
+      "type": "email"
+    },
+    {
+      "action": "Pipedrive connected successfully",
+      "detail": "5 contacts synced",
+      "timestamp": "2025-11-09T05:37:35.282846Z"
+    }
+  ]
+}

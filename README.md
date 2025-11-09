@@ -306,66 +306,19 @@ cd Hacknation
 
 #### 2. Google Cloud Setup (Optional - Required for AI Features)
 
-The AI agent requires Google Cloud credentials to function. Follow these steps:
+The AI agent requires Google Cloud credentials to function.
 
-##### **Step 2.1: Create Google Cloud Project**
+**📖 See [`GOOGLE_CLOUD_SETUP.md`](GOOGLE_CLOUD_SETUP.md) for detailed setup instructions.**
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select an existing one
-3. Note your Project ID
+**Quick Setup (5 minutes):**
+1. Get Gemini API Key: https://makersuite.google.com/app/apikey
+2. Create `backend/.env` file:
+   ```env
+   GOOGLE_API_KEY=your_api_key_here
+   ```
+3. Restart backend
 
-##### **Step 2.2: Enable Required APIs**
-
-Enable these APIs in your Google Cloud project:
-
-```bash
-# Go to APIs & Services > Library and enable:
-- Vertex AI API
-- Cloud AI Platform API
-```
-
-Or use gcloud CLI:
-```bash
-gcloud services enable aiplatform.googleapis.com
-```
-
-##### **Step 2.3: Create Service Account**
-
-1. Go to **IAM & Admin > Service Accounts**
-2. Click **Create Service Account**
-3. Name it (e.g., `zero-click-crm-sa`)
-4. Grant these roles:
-   - **Vertex AI User**
-   - **AI Platform Admin** (or AI Platform Developer)
-5. Click **Done**
-
-##### **Step 2.4: Generate Service Account Key**
-
-1. Click on the service account you just created
-2. Go to **Keys** tab
-3. Click **Add Key > Create new key**
-4. Choose **JSON** format
-5. Download the key file
-6. **Rename it to `service-account-key.json`**
-7. **Move it to the `backend/` directory**
-
-```bash
-# Your file structure should look like:
-backend/
-├── app/
-├── data/
-├── service-account-key.json  ← Place your key here
-├── requirements.txt
-└── ...
-```
-
-##### **Step 2.5: Get Gemini API Key (Alternative Method)**
-
-Alternatively, you can use a Gemini API key:
-
-1. Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Create an API key
-3. Copy the key for use in `.env` file
+**Alternative:** Use Service Account for production (see GOOGLE_CLOUD_SETUP.md)
 
 #### 3. Backend Setup
 
@@ -379,14 +332,9 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Create .env file
-cp .env.example .env  # If you created .env.example, otherwise create .env manually
-
-# Edit .env file and add your credentials:
-# GOOGLE_APPLICATION_CREDENTIALS=service-account-key.json
-# GOOGLE_CLOUD_PROJECT=your-project-id
-# Or use API key instead:
-# GOOGLE_API_KEY=your_gemini_api_key
+# Create .env file (see GOOGLE_CLOUD_SETUP.md for details)
+# For quick start, just add your Gemini API key:
+echo "GOOGLE_API_KEY=your_api_key_here" > .env
 
 # Start the backend server
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
@@ -398,7 +346,8 @@ Backend will be available at `http://localhost:8000`
 - ⚠️ **Never commit `service-account-key.json` to Git** (already in `.gitignore`)
 - ⚠️ **Never commit `.env` file with real credentials** (already in `.gitignore`)
 - ✅ The app will work with limited functionality without Google Cloud credentials
-- ✅ Use `.env.example` as a template for your `.env` file
+- ✅ See `GOOGLE_CLOUD_SETUP.md` for detailed setup instructions
+- ✅ See `QUICK_FIX_SUMMARY.md` for troubleshooting common issues
 
 #### 4. Frontend Setup
 
@@ -413,6 +362,16 @@ npm run dev
 ```
 
 Frontend will be available at `http://localhost:5173`
+
+### Troubleshooting
+
+If you encounter issues:
+1. **Encoding errors**: Fixed in latest version (uses UTF-8 encoding)
+2. **AI in Limited Mode**: See `GOOGLE_CLOUD_SETUP.md` to configure Google Cloud
+3. **Connection refused**: Ensure backend is running on port 8000
+4. **CORS errors**: Check `ALLOWED_ORIGINS` in backend `.env`
+
+For detailed troubleshooting, see `QUICK_FIX_SUMMARY.md`
 
 ---
 
